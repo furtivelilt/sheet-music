@@ -15,7 +15,7 @@ sopranText = \lyricmode{
   Hit the __
   Hit the road jack
   Don't __
-  Don't come back __ go! da
+  Don't come back __ go! dah
   
   % Bridge
   %=====
@@ -26,9 +26,9 @@ sopranText = \lyricmode{
 
   % Refrain
   %=====
-  do ba do 
+  doh bah doh 
   no more, no more, no more, no more
-  oh ba da ba do ba do ba do do ba do ba do ba do ba do
+  oh bah lah bah doh bah doh bah doh doh bah doh bah doh bah doh bah doh
 }
 
 altText = \lyricmode{
@@ -42,31 +42,31 @@ altText = \lyricmode{
   Hit the road
   Hit the road jack
   Hit the road 
-  Don't come back __ go! ba
+  Don't come back __ go! bah
 
   % Bridge
   %=====
   Hit the road oh jack oh jack
   Hit the road and don't come back
-  Hit the road oh jack oh ja' ba da ba da
+  Hit the road oh jack oh ja' bah lah bah dah
   Hit the road and don't come back
 
   %== Refrain
   Hit the road Jack
   and don't you come back
-  do __ do do do ba doom hit the road Jack and don't you come back no more
-  do do ba do ba do
+  doh __ doh doh doh bah doom hit the road Jack and don't you come back no more
+  doh doh bah doh bah doh
 
 }
 
 tenorText = \lyricmode{
   % Intro
   %=====
-  lo lo lo lo lo lo lo ba da
-  lo lo lo lo lo lo lo lo
-  lo lo lo lo lo lo lo lo
-  lo lo lo lo lo lo lo lo
-  lo lo lo lo lo lo la la __ bam ba __ go! da
+  loh loh loh loh loh loh loh bah dah
+  loh loh loh loh loh loh loh loh
+  loh loh loh loh loh loh loh loh
+  loh loh loh loh loh loh loh loh
+  loh loh loh loh loh loh lah lah __ bam bah __ go! dah
 
   % Bridge
   %=====
@@ -77,37 +77,37 @@ tenorText = \lyricmode{
 
   % Refrain
   %=====
-  lo ba do
-  lo ba do
-  lo ba do ba
-  lo ba do
-  lo ba do
-  lo do ba do
+  loh bah doh
+  loh bah doh
+  loh bah doh bah
+  loh bah doh
+  loh bah doh
+  loh what you say?
 }
 
 bassText = \lyricmode{
   % Intro
   %=====
-  do do do do do do do do
-  do do do do do do ba
-  do do do do do do do do
-  do do do do do do do do
-  do do do do do do do do
-  do do do do do do bam ba __ go! ba
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh doh bah
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh doh bam bah __ go! bah
 
   % Bridge
   %=====
-  do do do do do do do do
-  do do do do do do do do
-  do do do do do do do do
-  do do do do do do do 
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh doh doh 
 
   % Refrain
   %=====
-  do do do do do do do do
-  do do do do do do do do
-  do do do do do do do do
-  do do do do do do do
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh what you say?
 }
 
 bassMain = {
@@ -246,17 +246,32 @@ tenorRef = {
 bassRef = {
   \tripletFeel 8 \relative c{
     \repeat unfold 3{\bassMain}
-    bes4 bes as as ges ges8 f8~f2 \breathe
+    bes4 bes as as ges8 ges ges f8~f2 \breathe
   }
 }
 
 sopranVerseOne = {
   \tripletFeel 8 \relative c'{
+  f1~f2. a4 bes1~bes2 r4 ges4
+  f1~f2. a4 bes1~bes2 r4 ges4
   }
 }
 
 altVerseOne = {
   \tripletFeel 8 \relative c'{
+    des4
+    r4 es8 es es4 r 
+    es8 es es4 r bes 
+    
+    r4 es8 es es4 r 
+    es8 es es4 bes r 
+
+    r4 es8 es es4 r 
+    es8 es es4 r bes 
+    
+    r4 es8 es es4 r 
+    es8 es es4 bes4
+    
   }
 }
 
@@ -300,6 +315,8 @@ global = {
           \sopranIntro
           \sopranBridge
           \sopranRef
+          \sopranVerseOne
+          \sopranRef
         }
       }
       \new Lyrics = "Sopran" {
@@ -317,6 +334,8 @@ global = {
         {
           \altIntro
           \altBridge
+          \altRef
+          \altVerseOne
           \altRef
         }
       }
@@ -337,6 +356,7 @@ global = {
           \tenorBridge
           \tenorRef
           \tenorVerseOne
+          \tenorRef
         }
       }
       \new Lyrics = "Tenor" {
@@ -356,6 +376,7 @@ global = {
           \bassBridge
           \bassRef
           \bassVerseOne
+          \bassRef
         }
       }
       \new Lyrics = "bass" {
