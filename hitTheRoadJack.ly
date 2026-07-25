@@ -29,18 +29,43 @@ sopranText = \lyricmode{
 altText = \lyricmode{
   % Intro
   %=====
+  Oh __
+  Hit the road
+  Hit the road jack
+  Hit the road 
+  Don't come back
+  Hit the road
+  Hit the road jack
+  Hit the road 
+  Don't come back __ go! ba
 
   % Bridge
   %=====
-  
+  Hit the road oh jack oh jack
+  Hit the road and don't come back
+  Hit the road oh jack oh ja' ba da ba da
+  Hit the road and don't come back
+
+  %== Refrain
+  Hit the
+
 }
 
 tenorText = \lyricmode{
   % Intro
   %=====
-  
+  lo lo lo lo lo lo lo ba da
+  lo lo lo lo lo lo lo lo
+  lo lo lo lo lo lo lo lo
+  lo lo lo lo lo lo lo lo
+  lo lo lo lo lo lo la la __ bam ba __ go! da
+
   % Bridge
   %=====
+  Hit the road oh jack oh jack
+  Hit the road and don't come back
+  Hit the road oh jack oh jack
+  Hit the road and don't come back
 
 }
 
@@ -53,6 +78,7 @@ bassText = \lyricmode{
   do do do do do do do do
   do do do do do do do do
   do do do do do do bam ba __ go! ba
+
   % Bridge
   %=====
   do do do do do do do do
@@ -93,17 +119,6 @@ altIntro ={
     es4 f es2~
     es2 d4 des4
   }
-  \addlyrics{
-        Oh __
-        Hit the road
-        Hit the road jack
-        Hit the road 
-        Don't come back
-        Hit the road
-        Hit the road jack
-        Hit the road 
-        Don't come back __ go! ba
-  }
 }
 
 tenorIntro = {
@@ -116,13 +131,6 @@ tenorIntro = {
     f f es es | des es8 f8~f8 ges8 f4~
     f2 f4. f8
   }
-  \addlyrics{
-      lo lo lo lo lo lo lo ba da
-      lo lo lo lo lo lo lo lo
-      lo lo lo lo lo lo lo lo
-      lo lo lo lo lo lo lo lo
-      lo lo lo lo lo lo la la __ bam ba __ go! da
-  } 
 }
 
 bassIntro = {
@@ -157,13 +165,6 @@ altBridge = {
     bes4 des8 bes~bes4 as8 bes~bes4 bes8 des r4
     es8 des
   }
-  \addlyrics{
-    Hit the road oh jack oh jack
-    Hit the road and don't come back
-    Hit the road oh jack oh ja' ba da ba da
-    Hit the road and don't come back
-    Hit the
-  }
 }
 
 tenorBridge = {
@@ -172,12 +173,6 @@ tenorBridge = {
     des4 es8 f~f4 es8 es~es4 bes8 bes~bes2
     des4 es8 f~f4 ges8 f~f4 es8 f~f2
     des4 es8 f~f4 es8 es~es4 es8 es~es4 r
-  }
-  \addlyrics{
-    Hit the road oh jack oh jack
-    Hit the road and don't come back
-    Hit the road oh jack oh jack
-    Hit the road and don't come back
   }
 }
 
@@ -188,14 +183,29 @@ bassBridge = {
   }
 }
 
-sopranRef = {}
+sopranRef = {
+  \tripletFeel 8 \relative c'{
+  
+  }
+}
+
 altRef = {
   \tripletFeel 8 \relative c'{
   
   }
 }
-tenorRef = {}
-bassRef = {}
+
+tenorRef = {
+  \tripletFeel 8 \relative c'{
+  
+  }
+}
+
+bassRef = {
+  \tripletFeel 8 \relative c'{
+  
+  }
+}
 
 global = {
   \time 4/4
@@ -210,9 +220,16 @@ global = {
       \set Staff.instrumentName = "Sopran"
       \global 
       \clef "treble"
-      { 
-        \sopranIntro
-        \sopranBridge
+      \new Voice = "Sopran" {
+        { 
+          \sopranIntro
+          \sopranBridge
+        }
+      }
+      \new Lyrics = "Sopran" {
+        \lyricsto "Sopran" {
+          \sopranText
+        }
       }
     >>
 
@@ -220,9 +237,16 @@ global = {
       \set Staff.instrumentName = "Alt"
       \global
       \clef "treble"
-      {
-        \altIntro
-        \altBridge
+      \new Voice = "Alt" {
+        {
+          \altIntro
+          \altBridge
+        }
+      }
+      \new Lyrics = "Alt" {
+        \lyricsto "Alt" {
+          \altText
+        }
       }
     >>
     
@@ -230,9 +254,16 @@ global = {
       \set Staff.instrumentName = "Tenor"
       \global
       \clef "bass"
-      {
-        \tenorIntro
-        \tenorBridge
+      \new Voice = "Tenor" {
+        {
+          \tenorIntro
+          \tenorBridge
+        }
+      }
+      \new Lyrics = "Tenor" {
+        \lyricsto "Tenor" {
+          \tenorText
+        }
       }
     >>
 
