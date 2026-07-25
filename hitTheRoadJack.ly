@@ -185,42 +185,49 @@ bassBridge = {
 
 sopranRef = {
   \tripletFeel 8 \relative c'{
-    r1 
     as'4 bes2.
     f2 r4 des4
     f f bes bes des des8 bes~bes des4.
     r8 a4 bes2 bes8
     as f as f f4 f8 f8~
     f4 es8 des es des4 f8~
-    f2 es4 r4
+    f2 es4. r8
   }
 }
 
 altRef = {
   \tripletFeel 8 \relative c'{
-    r2. es8 des 
+    es8 des 
     es des bes bes~bes4. bes8 
     des des es des es r4 bes8~
     bes2 des4 es 
     f ges8 f8~f8 f8 es des 
     es des bes bes~bes4. bes8
     des des es des es4 bes8 bes~
-    bes4 as2 es'8 des es des~des4 c4 r4
+    bes4 as2 es'8 des es des~des4 c4 
     }
 }
 
 tenorRef = {
   \tripletFeel 8 \relative c'{
-    r1
+    as8 as~as f~f2~
+    f2. r4
 
+    as8 as~as f~f2
+    es8 f~f f~f4 es
+
+    as8 as~as f~f2~
+    f2. r4
+
+    as8 as~as f~f2
+    bes8 as f as~as4. r8
   }
 }
 
 bassRef = {
   \tripletFeel 8 \relative c{
-    r1
     \repeat unfold 3{\bassMain}
-    bes4 bes as as ges ges8 f4. r4
+    bes4 bes as as ges ges8 f2 r8
   }
 }
 
@@ -239,8 +246,8 @@ global = {
       \clef "treble"
       \new Voice = "Sopran" {
         { 
-          %\sopranIntro
-          %\sopranBridge
+          \sopranIntro
+          \sopranBridge
           \sopranRef
         }
       }
@@ -257,8 +264,8 @@ global = {
       \clef "treble"
       \new Voice = "Alt" {
         {
-          %\altIntro
-          %\altBridge
+          \altIntro
+          \altBridge
           \altRef
         }
       }
@@ -275,8 +282,8 @@ global = {
       \clef "bass"
       \new Voice = "Tenor" {
         {
-          %\tenorIntro
-          %\tenorBridge
+          \tenorIntro
+          \tenorBridge
           \tenorRef
         }
       }
@@ -293,8 +300,8 @@ global = {
       \clef "bass"
       \new Voice = "bass" {
         {
-          %\bassIntro
-          %\bassBridge
+          \bassIntro
+          \bassBridge
           \bassRef
         }
       }
