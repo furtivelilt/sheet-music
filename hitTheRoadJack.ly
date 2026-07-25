@@ -29,6 +29,13 @@ sopranText = \lyricmode{
   doh bah doh 
   no more, no more, no more, no more
   oh bah lah bah doh bah doh bah doh doh bah doh bah doh bah doh bah doh
+
+  % Verse One
+  %=====
+  Ooh __ Ooh
+  Oh __ Oh
+  Oh __ Oh
+  Ah __ Ah
 }
 
 altText = \lyricmode{
@@ -57,6 +64,17 @@ altText = \lyricmode{
   doh __ doh doh doh bah doom hit the road Jack and don't you come back no more
   doh doh bah doh bah doh
 
+  % Verse One
+  %=====
+  Now hit the road
+  Hit the road Jack
+  Hit the road
+  Hit the road Jack
+  Hit the road
+  Hit the road Jack
+  Hit the road
+  Hit the road
+
 }
 
 tenorText = \lyricmode{
@@ -83,6 +101,14 @@ tenorText = \lyricmode{
   loh bah doh
   loh bah doh
   loh what you say?
+
+  % Verse one
+  %=====
+  Old wo- man old wo- man, don't treat me so mean
+  Loh Loh Loh I 
+  Guess If __ you say so __
+  Loh ba go
+
 }
 
 bassText = \lyricmode{
@@ -108,6 +134,13 @@ bassText = \lyricmode{
   doh doh doh doh doh doh doh doh
   doh doh doh doh doh doh doh doh
   doh doh doh doh doh what you say?
+
+  % Verse One
+  %=====
+  doh doh doh doh doh doh doh you're the 
+  mea- nest old wo- man that I've ev- er seen.
+  Doh doh doh doh doh doh doh I
+  Have to pack my things and go.
 }
 
 bassMain = {
@@ -270,7 +303,7 @@ altVerseOne = {
     es8 es es4 r bes 
     
     r4 es8 es es4 r 
-    es8 es es4 bes4
+    es8 es es4 r4
     
   }
 }
@@ -279,9 +312,9 @@ tenorVerseOne = {
   \tripletFeel 8 \relative c{
     bes'4
     bes8 f f4 es8 des es4
-    es8 des es4 f2
-    as f~f es4 r8 bes
-    des4 es8 des es4 des4 f bes2 r4
+    es8 des es4 f4 r
+    as2 f~f es4 r8 bes
+    des4 es8(des) es4 des4 f(bes2) r4
 
     as2.  es8 f~f1 \breathe
   }
@@ -316,7 +349,7 @@ global = {
           \sopranBridge
           \sopranRef
           \sopranVerseOne
-          \sopranRef
+          %\sopranRef
         }
       }
       \new Lyrics = "Sopran" {
@@ -336,7 +369,7 @@ global = {
           \altBridge
           \altRef
           \altVerseOne
-          \altRef
+          %\altRef
         }
       }
       \new Lyrics = "Alt" {
@@ -356,7 +389,7 @@ global = {
           \tenorBridge
           \tenorRef
           \tenorVerseOne
-          \tenorRef
+          %\tenorRef
         }
       }
       \new Lyrics = "Tenor" {
@@ -376,7 +409,7 @@ global = {
           \bassBridge
           \bassRef
           \bassVerseOne
-          \bassRef
+          %\bassRef
         }
       }
       \new Lyrics = "bass" {
