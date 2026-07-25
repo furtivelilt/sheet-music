@@ -64,11 +64,15 @@ tenorIntro = {
   } 
 }
 
+bassMain = {
+ \relative c{
+  bes4 bes as as ges ges f f
+ }
+}
+
 bassIntro = {
   \tripletFeel 8 \relative c{ 
-    bes4 bes as as ges ges f f
-    bes4 bes as as ges ges f f
-    bes4 bes as as ges ges f f
+    \repeat unfold 3{\bassMain}
     bes4 bes as as bes as8 ges8~ges8 r8 des'4~
     des2 bes2
   }
