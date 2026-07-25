@@ -106,7 +106,7 @@ sopranBridge = {
     f~
     f
     as~
-    as
+    as2. r4
   }
 
   \addlyrics{
@@ -123,7 +123,7 @@ altBridge = {
     bes4 des8 bes~bes4 as8 bes~bes4 as8 c~c(as4.)
     bes4 des8 bes~bes4 as8 bes~bes4 des8 bes~bes2
     bes4 des8 bes~bes4 as8 bes~bes4 as8 es' es8 des8 c8 as8
-    bes4 des8 bes~bes4 as8 bes~bes4 bes8 des~des4
+    bes4 des8 bes~bes4 as8 bes~bes4 bes8 des r4
     es8 des
   }
   \addlyrics{
@@ -140,7 +140,7 @@ tenorBridge = {
     des4 es8 f~f4 ges8 f~f4 es8 f~f2
     des4 es8 f~f4 es8 es~es4 bes8 bes~bes2
     des4 es8 f~f4 ges8 f~f4 es8 f~f2
-    des4 es8 f~f4 es8 es~es4 es8 es~es2    
+    des4 es8 f~f4 es8 es~es4 es8 es~es4 r
   }
   \addlyrics{
     Hit the road oh jack oh jack
@@ -153,13 +153,13 @@ tenorBridge = {
 bassBridge = {
   \tripletFeel 8 \relative c{
     \repeat unfold 3 {\bassMain}
-    bes4 bes c c des bes c c
+    bes4 bes c c des bes c r
   }
   \addlyrics{
       do do do do do do do do
       do do do do do do do do
       do do do do do do do do
-      do do do do do do do do
+      do do do do do do do 
   }
 }
 
