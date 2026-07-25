@@ -24,6 +24,11 @@ sopranText = \lyricmode{
   Oh __
   Ah __
 
+  % Refrain
+  %=====
+  do ba do 
+  no more, no more, no more, no more
+  oh ba da ba do ba do ba do do ba do ba do ba do ba do
 }
 
 altText = \lyricmode{
@@ -47,7 +52,10 @@ altText = \lyricmode{
   Hit the road and don't come back
 
   %== Refrain
-  Hit the
+  Hit the road Jack
+  and don't you come back
+  do __ do do do ba doom oh hit the road Jack and don't you come back no more
+  do do ba do ba do
 
 }
 
@@ -67,6 +75,14 @@ tenorText = \lyricmode{
   Hit the road oh jack oh jack
   Hit the road and don't come back
 
+  % Refrain
+  %=====
+  lo ba do
+  lo ba do
+  lo ba do ba
+  lo ba do
+  lo ba do
+  lo do ba do
 }
 
 bassText = \lyricmode{
@@ -85,6 +101,13 @@ bassText = \lyricmode{
   do do do do do do do do
   do do do do do do do do
   do do do do do do do 
+
+  % Refrain
+  %=====
+  do do do do do do do do
+  do do do do do do do do
+  do do do do do do do do
+  do do do do do do do
 }
 
 bassMain = {
@@ -190,21 +213,21 @@ sopranRef = {
     f f bes bes des des8 bes~bes des4.
     r8 a4 bes2 bes8
     as f as f f4 f8 f8~
-    f4 es8 des es des4 f8~
-    f2 es4. r8
+    f4 es8 des es des4 f8
+    f2 es2 \breathe
   }
 }
 
 altRef = {
   \tripletFeel 8 \relative c'{
     es8 des 
-    es des bes bes~bes4. bes8 
-    des des es des es r4 bes8~
+    es(des bes) bes~bes4. bes8 
+    des des es(des) es r4 bes8~
     bes2 des4 es 
     f ges8 f8~f8 f8 es des 
-    es des bes bes~bes4. bes8
-    des des es des es4 bes8 bes~
-    bes4 as2 es'8 des es des~des4 c4 
+    es(des bes) bes~bes4. bes8
+    des des es(des) es4 bes8 bes~
+    bes4 as2 es'8 des es des~des4 c4
     }
 }
 
@@ -220,14 +243,14 @@ tenorRef = {
     f2. r4
 
     as8 as~as f~f2
-    bes8 as f as~as4. r8
+    bes8 as f as~as4
   }
 }
 
 bassRef = {
   \tripletFeel 8 \relative c{
     \repeat unfold 3{\bassMain}
-    bes4 bes as as ges ges8 f2 r8
+    bes4 bes as as ges ges8 f8~f2 \breathe
   }
 }
 
