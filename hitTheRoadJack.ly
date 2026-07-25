@@ -8,6 +8,59 @@
   subtitle= \markup {\italic " ''Ich seh schwarz, wie Ray Charles'' "}
 }
 
+sopranText = \lyricmode{
+  % Intro
+  %=====
+  Oh
+  Hit the __
+  Hit the road jack
+  Don't __
+  Don't come back __ go! da
+  
+  % Bridge
+  %=====
+  Ooh __
+  Oh __
+  Oh __
+  Ah __
+
+}
+
+altText = \lyricmode{
+  % Intro
+  %=====
+
+  % Bridge
+  %=====
+  
+}
+
+tenorText = \lyricmode{
+  % Intro
+  %=====
+  
+  % Bridge
+  %=====
+
+}
+
+bassText = \lyricmode{
+  % Intro
+  %=====
+  do do do do do do do do
+  do do do do do do ba
+  do do do do do do do do
+  do do do do do do do do
+  do do do do do do do do
+  do do do do do do bam ba __ go! ba
+  % Bridge
+  %=====
+  do do do do do do do do
+  do do do do do do do do
+  do do do do do do do do
+  do do do do do do do 
+}
+
 bassMain = {
  \relative c{
   bes4 bes as as ges ges f f
@@ -23,13 +76,6 @@ sopranIntro = {
     as1~as2.~as4
     f2 as c2(as2)~
     as2 bes4. bes8
-  }
-  \addlyrics{
-  Oh
-  Hit the __
-  Hit the road jack
-  Don't __
-  Don't come back __ go! da
   }
 }
 
@@ -87,14 +133,7 @@ bassIntro = {
     bes4 bes as as bes as8 ges8~ges8 r8 des'4~
     des2 bes4 bes4
   }
-  \addlyrics{
-    do do do do do do do do
-    do do do do do do ba
-    do do do do do do do do
-    do do do do do do do do
-    do do do do do do do do
-    do do do do do do bam ba __ go! ba
-  }
+  
 }
 
 sopranBridge = {
@@ -108,14 +147,6 @@ sopranBridge = {
     as~
     as2. r4
   }
-
-  \addlyrics{
-  Ooh __
-  Oh __
-  Oh __
-  Ah __
-  }
-
 }
 
 altBridge = {
@@ -155,13 +186,16 @@ bassBridge = {
     \repeat unfold 3 {\bassMain}
     bes4 bes c c des bes c r
   }
-  \addlyrics{
-      do do do do do do do do
-      do do do do do do do do
-      do do do do do do do do
-      do do do do do do do 
+}
+
+sopranRef = {}
+altRef = {
+  \tripletFeel 8 \relative c'{
+  
   }
 }
+tenorRef = {}
+bassRef = {}
 
 global = {
   \time 4/4
@@ -206,10 +240,18 @@ global = {
       \set Staff.instrumentName = "Bass"
       \global
       \clef "bass"
-      {
-        \bassIntro
-        \bassBridge
+      \new Voice = "bass" {
+        {
+          \bassIntro
+          \bassBridge
+        }
       }
+      \new Lyrics = "bass" {
+        \lyricsto "bass" {
+          \bassText
+        }
+      }
+      
     >>
   >>
 }
