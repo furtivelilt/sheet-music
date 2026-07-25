@@ -123,7 +123,7 @@ sopranIntro = {
     f2 as bes f
     as1~as2.~as4 \breathe
     f2 as c2(as2)~
-    as2 bes4. bes8
+    as2 bes4. bes8-.
   }
 }
 
@@ -138,7 +138,7 @@ altIntro ={
     es8 es es4 r8 bes4.
     r4 es8 es es4 r4
     es4 f es2~
-    es2 d4 des4
+    es2 d4 des8 r
   }
 }
 
@@ -149,7 +149,7 @@ tenorIntro = {
     f4 f es es | des8 es des4 c c |
     des4 des c c | des des es es |
     f f es es | des es8 f8~f8 ges8 f4~
-    f2 f4. f8
+    f2 f4. f8-.
   }
 }
 
@@ -158,7 +158,7 @@ bassIntro = {
     \bassMain bes4 bes as as ges ges8 f4.~f8 r
     \repeat unfold 3{\bassMain}
     bes4 bes as as bes as8 ges8~ges8 r8 des'4~
-    des2 bes4 bes4
+    des2 bes4 bes8 r
   }
   
 }
@@ -250,6 +250,38 @@ bassRef = {
   }
 }
 
+sopranVerseOne = {
+  \tripletFeel 8 \relative c'{
+  }
+}
+
+altVerseOne = {
+  \tripletFeel 8 \relative c'{
+  }
+}
+
+tenorVerseOne = {
+  \tripletFeel 8 \relative c{
+    bes'4
+    bes8 f f4 es8 des es4
+    es8 des es4 f2
+    as f~f es4 r8 bes
+    des4 es8 des es4 des4 f bes2 r4
+
+    as2.  es8 f~f1 \breathe
+  }
+}
+
+bassVerseOne = {
+  \tripletFeel 8 \relative c{
+  bes4 bes as as ges ges f
+  bes8 bes f' f es4 des8 bes8 bes bes des4 bes8 bes~bes4. r8
+  bes4 bes as as ges ges f r8 es' 
+  f f es es des4 bes8 bes8~bes1 \breathe
+  }
+}
+
+
 global = {
   \time 4/4
   \key bes \minor
@@ -304,6 +336,7 @@ global = {
           \tenorIntro
           \tenorBridge
           \tenorRef
+          \tenorVerseOne
         }
       }
       \new Lyrics = "Tenor" {
@@ -322,6 +355,7 @@ global = {
           \bassIntro
           \bassBridge
           \bassRef
+          \bassVerseOne
         }
       }
       \new Lyrics = "bass" {
