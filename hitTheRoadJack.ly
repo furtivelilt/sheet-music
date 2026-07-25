@@ -163,7 +163,7 @@ altBridge = {
     bes4 des8 bes~bes4 as8 bes~bes4 des8 bes~bes2
     bes4 des8 bes~bes4 as8 bes~bes4 as8 es' es8 des8 c8 as8
     bes4 des8 bes~bes4 as8 bes~bes4 bes8 des r4
-    es8 des
+    % es des
   }
 }
 
@@ -185,25 +185,42 @@ bassBridge = {
 
 sopranRef = {
   \tripletFeel 8 \relative c'{
-  
+    r1 
+    as'4 bes2.
+    f2 r4 des4
+    f f bes bes des des8 bes~bes des4.
+    r8 a4 bes2 bes8
+    as f as f f4 f8 f8~
+    f4 es8 des es des4 f8~
+    f2 es4 r4
   }
 }
 
 altRef = {
   \tripletFeel 8 \relative c'{
-  
-  }
+    r2. es8 des 
+    es des bes bes~bes4. bes8 
+    des des es des es r4 bes8~
+    bes2 des4 es 
+    f ges8 f8~f8 f8 es des 
+    es des bes bes~bes4. bes8
+    des des es des es4 bes8 bes~
+    bes4 as2 es'8 des es des~des4 c4 r4
+    }
 }
 
 tenorRef = {
   \tripletFeel 8 \relative c'{
-  
+    r1
+
   }
 }
 
 bassRef = {
-  \tripletFeel 8 \relative c'{
-  
+  \tripletFeel 8 \relative c{
+    r1
+    \repeat unfold 3{\bassMain}
+    bes4 bes as as ges ges8 f4. r4
   }
 }
 
@@ -222,8 +239,9 @@ global = {
       \clef "treble"
       \new Voice = "Sopran" {
         { 
-          \sopranIntro
-          \sopranBridge
+          %\sopranIntro
+          %\sopranBridge
+          \sopranRef
         }
       }
       \new Lyrics = "Sopran" {
@@ -239,8 +257,9 @@ global = {
       \clef "treble"
       \new Voice = "Alt" {
         {
-          \altIntro
-          \altBridge
+          %\altIntro
+          %\altBridge
+          \altRef
         }
       }
       \new Lyrics = "Alt" {
@@ -256,8 +275,9 @@ global = {
       \clef "bass"
       \new Voice = "Tenor" {
         {
-          \tenorIntro
-          \tenorBridge
+          %\tenorIntro
+          %\tenorBridge
+          \tenorRef
         }
       }
       \new Lyrics = "Tenor" {
@@ -273,8 +293,9 @@ global = {
       \clef "bass"
       \new Voice = "bass" {
         {
-          \bassIntro
-          \bassBridge
+          %\bassIntro
+          %\bassBridge
+          \bassRef
         }
       }
       \new Lyrics = "bass" {
