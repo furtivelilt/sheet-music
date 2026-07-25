@@ -1,4 +1,5 @@
 \version "2.26.0"
+\include "swing.ly"
 
 sopranIntro = {
   \tripletFeel 8 \relative c''{
