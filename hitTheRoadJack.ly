@@ -54,7 +54,7 @@ altText = \lyricmode{
   %== Refrain
   Hit the road Jack
   and don't you come back
-  do __ do do do ba doom oh hit the road Jack and don't you come back no more
+  do __ do do do ba doom hit the road Jack and don't you come back no more
   do do ba do ba do
 
 }
@@ -119,9 +119,9 @@ bassMain = {
 sopranIntro = {
   \tripletFeel 8 \relative c''{
     r1 r r2 as2~as2.. r8
-    bes2 f~f1
+    bes2 f~f1 \breathe
     f2 as bes f
-    as1~as2.~as4
+    as1~as2.~as4 \breathe
     f2 as c2(as2)~
     as2 bes4. bes8
   }
@@ -166,11 +166,11 @@ bassIntro = {
 sopranBridge = {
   \tripletFeel 8 \relative c'{
     des1~
-    des
+    des \breathe
     es~
-    es
+    es  \breathe
     f~
-    f
+    f \breathe
     as~
     as2. r4
   }
@@ -178,19 +178,19 @@ sopranBridge = {
 
 altBridge = {
   \tripletFeel 8 \relative c'{
-    bes4 des8 bes~bes4 as8 bes~bes4 as8 c~c(as4.)
-    bes4 des8 bes~bes4 as8 bes~bes4 des8 bes~bes2
-    bes4 des8 bes~bes4 as8 bes~bes4 as8 es' es8 des8 c8 as8
-    bes4 des8 bes~bes4 as8 bes~bes4 bes8 des r4
+    bes4 des8 bes~bes4 as8 bes~bes4 as8 c~c(as4.) \breathe
+    bes4 des8 bes~bes4 as8 bes~bes4 des8 bes~bes2 \breathe 
+    bes4 des8 bes~bes4 as8 bes~bes4 as8 es' es8 des8 c8 as8 \breathe
+    bes4 des8 bes~bes4 as8 bes~bes4 bes8 des r4 
     % es des
   }
 }
 
 tenorBridge = {
   \tripletFeel 8 \relative c{
-    des4 es8 f~f4 ges8 f~f4 es8 f~f2
-    des4 es8 f~f4 es8 es~es4 bes8 bes~bes2
-    des4 es8 f~f4 ges8 f~f4 es8 f~f2
+    des4 es8 f~f4 ges8 f~f4 es8 f~f2 \breathe
+    des4 es8 f~f4 es8 es~es4 bes8 bes~bes2 \breathe
+    des4 es8 f~f4 ges8 f~f4 es8 f~f2 \breathe
     des4 es8 f~f4 es8 es~es4 es8 es~es4 r
   }
 }
@@ -220,10 +220,10 @@ altRef = {
     es(des bes) bes~bes4. bes8 
     des des es(des) es r4 bes8~
     bes2 des4 es 
-    f ges8 f8~f8 f8 es des 
+    f ges8 f8~f8 r8 es des 
     es(des bes) bes~bes4. bes8
     des des es(des) es4 bes8 bes~
-    bes4 as2 es'8 des es des~des4 c4
+    bes4 as4. r8 es'8 des es des~des4 c4
     }
 }
 
@@ -233,7 +233,7 @@ tenorRef = {
     f2. r4
 
     as8 as~as f~f2
-    es8 f~f f~f4 es
+    es8 f~f f~f4 es \breathe
 
     as8 as~as f~f2~
     f2. r4
