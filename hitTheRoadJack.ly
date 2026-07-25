@@ -5,7 +5,7 @@
   title = "Hit the road jack"
   composer = "Ray Charles"
   arranger = "Arr. B. Lockmann"
-  subtitle= \markup {\italic " ''Ich seh schwarz, wie Ray Charles'' "}
+  subtitle= \markup {\italic " ''Ich seh' schwarz, wie Ray Charles'' "}
 }
 
 sopranText = \lyricmode{
@@ -118,8 +118,7 @@ bassMain = {
 
 sopranIntro = {
   \tripletFeel 8 \relative c''{
-    \repeat volta 2{}
-    \alternative{{r1 r} {r2 as2~as2.. r8}}
+    r1 r r2 as2~as2.. r8
     bes2 f~f1
     f2 as bes f
     as1~as2.~as4
@@ -130,8 +129,7 @@ sopranIntro = {
 
 altIntro ={
   \tripletFeel 8 \relative c'{
-    \repeat volta 2{}
-    \alternative{{r1 r} {r1 es2.. r8}}
+    r1 r r es2.. r8
     r4 es8 es es4 r4
     es8 es es4 r8 bes4.
     r4 es8 es es4 r4
@@ -146,8 +144,7 @@ altIntro ={
 
 tenorIntro = {
   \tripletFeel 8 \relative c{ 
-    \repeat volta 2{}
-    \alternative{{r1 r} {f4 f es es | des8 es des4 f es8 r}}
+    r1 r f4 f es es | des8 es des4 f es8 r
     des4 des c c | des des es es |
     f4 f es es | des8 es des4 c c |
     des4 des c c | des des es es |
@@ -158,8 +155,7 @@ tenorIntro = {
 
 bassIntro = {
   \tripletFeel 8 \relative c{ 
-    \repeat volta 2{}
-    \alternative{{\bassMain} {bes4 bes as as ges ges8 f4.~f8 r}}
+    \bassMain bes4 bes as as ges ges8 f4.~f8 r
     \repeat unfold 3{\bassMain}
     bes4 bes as as bes as8 ges8~ges8 r8 des'4~
     des2 bes4 bes4
