@@ -123,7 +123,7 @@ altBridge = {
     bes4 des8 bes~bes4 as8 bes~bes4 as8 c~c(as4.)
     bes4 des8 bes~bes4 as8 bes~bes4 des8 bes~bes2
     bes4 des8 bes~bes4 as8 bes~bes4 as8 es' es8 des8 c8 as8
-    bes4 des8 bes~bes4 as8 bes~bes4 bes8 des~des
+    bes4 des8 bes~bes4 as8 bes~bes4 bes8 des~des4
     es8 des
   }
   \addlyrics{
