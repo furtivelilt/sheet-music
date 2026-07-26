@@ -36,6 +36,13 @@ sopranText = \lyricmode{
   Oh __ Oh
   Oh __ Oh
   Ah __ Ah
+
+  % Refrain
+  %=====
+  doh bah doh 
+  no more, no more, no more, no more
+  oh bah lah bah doh bah doh bah doh doh bah doh bah doh bah doh bah doh
+  Jack
 }
 
 altText = \lyricmode{
@@ -75,6 +82,13 @@ altText = \lyricmode{
   Hit the road
   Hit the road
 
+  %== Refrain
+  Hit the road Jack
+  and don't you come back
+  doh __ doh doh doh bah doom hit the road Jack and don't you come back no more
+  doh doh bah doh bah doh hit the
+  road Jack
+
 }
 
 tenorText = \lyricmode{
@@ -109,6 +123,19 @@ tenorText = \lyricmode{
   Guess If __ you say so __
   Loh ba go
 
+  % Refrain
+  %=====
+  loh bah doh
+  loh bah doh
+  loh bah doh bah
+  loh bah doh
+  loh bah doh
+  loh what you say?
+  
+  loh
+
+  the road Jack
+
 }
 
 bassText = \lyricmode{
@@ -141,6 +168,15 @@ bassText = \lyricmode{
   mea- nest old wo- man that I've ev- er seen.
   Doh doh doh doh doh doh doh I
   Have to pack my things and go.
+
+  % Refrain
+  %=====
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh what you say?
+
+  Hit the road Jack
 }
 
 bassMain = {
@@ -215,7 +251,7 @@ altBridge = {
     bes4 des8 bes~bes4 as8 bes~bes4 des8 bes~bes2 \breathe 
     bes4 des8 bes~bes4 as8 bes~bes4 as8 es' es8 des8 c8 as8 \breathe
     bes4 des8 bes~bes4 as8 bes~bes4 bes8 des r4 
-    % es des
+    es8 des 
   }
 }
 
@@ -249,8 +285,7 @@ sopranRef = {
 
 altRef = {
   \tripletFeel 8 \relative c'{
-    es8 des 
-    es(des bes) bes~bes4. bes8 
+    es8(des bes) bes~bes4. bes8 
     des des es(des) es r4 bes8~
     bes2 des4 es 
     f ges8 f8~f8 r8 es des 
@@ -303,7 +338,7 @@ altVerseOne = {
     es8 es es4 r bes 
     
     r4 es8 es es4 r 
-    es8 es es4 r4
+    es8 es es4 r4 es8 des 
     
   }
 }
@@ -349,7 +384,11 @@ global = {
           \sopranBridge
           \sopranRef
           \sopranVerseOne
-          %\sopranRef
+          \repeat volta 2{\sopranRef}
+          \relative c' {
+            r4. des8~
+            des2\fermata
+          }
         }
       }
       \new Lyrics = "Sopran" {
@@ -369,7 +408,11 @@ global = {
           \altBridge
           \altRef
           \altVerseOne
-          %\altRef
+          \repeat volta 2{{\altRef \relative c'{es8 des} }}
+          \relative c' {
+            r4 as8 as~
+            as\fermata
+          }
         }
       }
       \new Lyrics = "Alt" {
@@ -389,7 +432,11 @@ global = {
           \tenorBridge
           \tenorRef
           \tenorVerseOne
-          %\tenorRef
+          \repeat volta 2{{\tenorRef \relative c'{as4 \breathe}}}
+          \relative c {
+            r8 es es es~
+            es2\fermata
+          }
         }
       }
       \new Lyrics = "Tenor" {
@@ -409,7 +456,11 @@ global = {
           \bassBridge
           \bassRef
           \bassVerseOne
-          %\bassRef
+          \repeat volta 2{\bassRef}
+          \relative c{
+            ges8 ges ges ges~
+            ges2\fermata
+          }
         }
       }
       \new Lyrics = "bass" {
