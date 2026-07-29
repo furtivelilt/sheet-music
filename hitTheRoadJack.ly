@@ -101,7 +101,7 @@ altText = \lyricmode{
   %== Refrain
   Hit the road Jack
   and don't you come back
-  doh __ doh doh doh bah doom hit the road Jack and don't you come back no more
+  no __ more, no more, no more hit the road Jack and don't you come back no more
   doh doh bah doh bah doh hit the
 
   % Outro
