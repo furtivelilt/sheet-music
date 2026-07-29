@@ -42,7 +42,23 @@ sopranText = \lyricmode{
   doh bah doh 
   no more, no more, no more, no more
   oh bah doh and don't you come back no more doh bah doh bah doh bah doh
+
+  % Outro
+  %=====
+  Jack __
+  Back __
+
+  Jack __
+  Back __
+
+  Jack __
+  Back __
+
   Jack
+  
+  Doh
+
+  Bah Bah __
 }
 
 altText = \lyricmode{
@@ -87,7 +103,23 @@ altText = \lyricmode{
   and don't you come back
   doh __ doh doh doh bah doom hit the road Jack and don't you come back no more
   doh doh bah doh bah doh hit the
+
+  % Outro
+  %=====
+  road Jack __
+  come back __
+  
+  road Jack __
+  come back __
+
+  road Jack __
+  come back __
+  
   road Jack
+  
+  Doh
+
+  Dah Dah __
 
 }
 
@@ -134,7 +166,21 @@ tenorText = \lyricmode{
   
   loh
 
-  the road Jack
+  % Outro
+  %=====
+  the road Jack __
+  you come back __
+
+  the road Jack __
+  you come back __
+
+  the road Jack __
+  you come back __
+
+  the road Jack __
+  
+  Doh
+  Bah __
 
 }
 
@@ -176,7 +222,20 @@ bassText = \lyricmode{
   doh doh doh doh doh doh doh doh
   doh doh doh doh doh what you say?
 
+  % Outro
+  %=====
+  Hit the road Jack __
+  Don't you come back __
+
+  Hit the road Jack __
+  Don't you come back __
+
+  Hit the road Jack __
+  Don't you come back __
+
   Hit the road Jack
+  Doh
+  Bah __
 }
 
 bassMain = {
@@ -404,11 +463,11 @@ global = {
             r4. es8~es2~
             es1 \breathe
 
-            r4. es8~es2~
-            es1 \breathe
+            r4. es8~es2
+            r2. des4 \breathe
 
-            r4. ges4 f8~
-            f4 \fermata
+            r4. ges4 f4.~
+            f1
 
           }
         }
@@ -450,11 +509,12 @@ global = {
             r4 c8 c~c2~
             c1 \breathe
 
-            r4 des8 des~des2~
-            des2 c \breathe
+            r4 des8 des~des2
+            r2 c \breathe
 
             r4 es2
-            des4 \fermata
+            des4~
+            des1
           }
         }
       }
@@ -495,11 +555,11 @@ global = {
             r8 as as as~as2~
             as1 \breathe
 
-            r8 bes bes bes4. as4~
-            as4 as2.
+            r8 bes bes bes4.(as4) 
+            r4 as2. \breathe
 
-            r8 as8~as2~
-            as4 \fermata
+            r8 ges8~ges2.(
+            as1)
             
           }
         }
@@ -544,7 +604,8 @@ global = {
             bes8 bes bes bes~bes2 
             as1 \breathe
 
-            des2.~des4 \fermata
+            des1~
+            des
           }
         }
       }
