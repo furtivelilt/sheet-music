@@ -460,8 +460,8 @@ global = {
             r4. f8~f2~
             f1 \breathe
 
-            r4. es8~es2~
-            es1 \breathe
+            r4. f8~f2~
+            f1 \breathe
 
             r4. es8~es2
             r2. des4 \breathe
@@ -497,8 +497,8 @@ global = {
             r4 des8 des~des2~
             des1 \breathe
 
-            r4 as8 as~as2~
-            as1 \breathe
+            r4 bes8 bes~bes2~
+            bes1 \breathe
 
             r4 c8 c~c2~
             c1 \breathe
