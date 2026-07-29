@@ -1,17 +1,28 @@
 \version "2.26.0"
 \include "swing.ly"
+#(set-global-staff-size 19)
+
+\paper {
+  property-defaults.fonts.serif = "Courier"
+}
 
 \header {
   title = "Hit the road jack"
   composer = "Ray Charles"
   arranger = "Arr. B. Lockmann"
-  subtitle= \markup {\italic " ''Ich seh' schwarz, wie Ray Charles'' "}
+  subtitle= \markup {\italic " \"Ich seh' schwarz, wie Ray Charles\" "}
+}
+
+global = {
+  \time 4/4
+  \key bes \minor
+  \tempo swing 2 = 70
 }
 
 sopranText = \lyricmode{
   % Intro
   %=====
-  Oh
+  Oh __
   Hit the __
   Hit the road jack
   Don't __
@@ -32,10 +43,10 @@ sopranText = \lyricmode{
 
   % Verse One
   %=====
-  Ooh __ Ooh
-  Oh __ Oh
-  Oh __ Oh
-  Ah __ Ah
+  Ooh __ 
+  Oh __
+  Oh __
+  Ah __ Bah
 
   % Refrain
   %=====
@@ -64,7 +75,7 @@ sopranText = \lyricmode{
 altText = \lyricmode{
   % Intro
   %=====
-  Oh __
+  Oh
   Hit the road
   Hit the road jack
   Hit the road 
@@ -245,19 +256,21 @@ bassMain = {
 }
 
 sopranIntro = {
+
   \tripletFeel 8 \relative c''{
-    r1 r r2 as2~as2.. r8
+    r1 r r2 as2~as1 \breathe
     bes2 f~f1 \breathe
     f2 as bes f
     as1~as2.~as4 \breathe
     f2 as c2(as2)~
     as2 bes4. bes8-.
   }
+
 }
 
 altIntro ={
   \tripletFeel 8 \relative c'{
-    r1 r r es2.. r8
+    r1 r r es1 \breathe
     r4 es8 es es4 r4
     es8 es es4 r8 bes4.
     r4 es8 es es4 r4
@@ -272,7 +285,7 @@ altIntro ={
 
 tenorIntro = {
   \tripletFeel 8 \relative c{ 
-    r1 r f4 f es es | des8 es des4 f c8 r
+    r1 r f4 f es es | des8 es des4 f c4 \breathe
     des4 des c c | des des es es |
     f4 f es es | des8 es des4 c c |
     des4 des c c | des des es es |
@@ -283,7 +296,7 @@ tenorIntro = {
 
 bassIntro = {
   \tripletFeel 8 \relative c{ 
-    \bassMain bes4 bes as as ges ges8 f4.~f8 r
+    \bassMain bes4 bes as as ges ges8 f8~f2 \breathe
     \repeat unfold 3{\bassMain}
     bes4 bes as as bes as8 ges8~ges8 r8 des'4~
     des2 bes4 bes8 r
@@ -293,7 +306,7 @@ bassIntro = {
 
 sopranBridge = {
   \tripletFeel 8 \relative c'{
-    des1~
+    des1~^\markup {\italic schnipsen? }
     des \breathe
     es~
     es  \breathe
@@ -379,8 +392,8 @@ bassRef = {
 
 sopranVerseOne = {
   \tripletFeel 8 \relative c'{
-  f1~f2. a4 bes1~bes2 r4 ges4
-  f1~f2. a4 bes1~bes2 r4 ges4
+  f1~f2. a4(bes1)~bes2 r4 ges4(
+  f1)~f2. a4(bes1)~bes2 r4 f4
   }
 }
 
@@ -423,13 +436,6 @@ bassVerseOne = {
   }
 }
 
-
-global = {
-  \time 4/4
-  \key bes \minor
-  \tempo swing 2 = 70
-}
-
 \score {
   \transpose es es{
   \new ChoirStaff <<
@@ -445,7 +451,7 @@ global = {
           \sopranVerseOne
           \repeat volta 2{\sopranRef}
           \tripletFeel 8 \relative c' {
-            r4. des8~des2~
+            r4. ^\markup {\italic {schnipsen stopp!}} des8~des2~
             des1 \breathe
 
             r4. f8~f2~
