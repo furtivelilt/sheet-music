@@ -1,6 +1,6 @@
 \version "2.26.0"
 \include "swing.ly"
-#(set-global-staff-size 19)
+#(set-global-staff-size 18)
 
 \paper {
   property-defaults.fonts.serif = "Courier"
@@ -17,6 +17,19 @@ global = {
   \time 4/4
   \key bes \minor
   \tempo swing 2 = 70
+}
+
+soloText = \lyricmode{
+  Hit the road and don't you come back
+  Hit the road and don't you come back
+  Hit the road and don't you come back
+  Hit the road and don't you come back
+
+  Hit the road and don't you come back
+  Hit the road and don't you come back
+  Hit the road and don't you come back
+
+  Bah bah bah bah __ 
 }
 
 sopranText = \lyricmode{
@@ -439,6 +452,45 @@ bassVerseOne = {
 \score {
   \transpose es es{
   \new ChoirStaff <<
+    \new Staff = "Solo" <<
+      \set Staff.instrumentName = "Solo?"
+      \global
+      \clef "treble"
+      \new Voice = "Solo"{
+        \tripletFeel 8 \relative c'' {
+          R1*45
+          r4 f8 es f4 f 
+          f8 as bes f~f2
+          
+          r4 f8 es f4 f 
+          f8 as bes f~f2 
+          
+          r4 f8 es f4 f 
+          f8 as bes f~f2 
+          
+          r4 f8 es f4 f 
+          f8 as bes bes~bes2
+          
+          r4 bes8 as bes4 bes
+          bes8 as bes des~des2
+
+          r4 bes8 as bes4 bes
+          bes8 as bes des~des2
+
+          r4 es8 des bes4 as
+          bes8 as bes des~des2 \breathe
+
+          as4 bes des es~
+          es1
+        }
+      }
+      \new Lyrics = "Solo" {
+        \lyricsto "Solo" {
+          \soloText
+        }
+      }
+    >>
+
     \new Staff = "Sopran" <<
       \set Staff.instrumentName = "Sopran"
       \global 
@@ -624,7 +676,15 @@ bassVerseOne = {
     >>
   >>
 }
-  \layout {}
+  \layout {
+    \context {
+      \Staff
+      \RemoveEmptyStaves
+      % Uncomment the next line if you want to hide empty staves even on the very first system:
+      % \override VerticalAxisGroup.remove-first = ##t
+    }
+  }
+
   \midi {}
 
 }
