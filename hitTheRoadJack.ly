@@ -434,8 +434,29 @@ global = {
           \tenorVerseOne
           \repeat volta 2{{\tenorRef \tripletFeel 8 \relative c'{as4 \breathe}}}
           \tripletFeel 8 \relative c {
-            r8 es es es~
-            es2\fermata
+            r8 es es es~es2~
+            es1 \breathe
+
+            r8 as as as~as2~
+            as1 \breathe
+
+            r8 des, des des~des2~
+            des1 \breathe
+
+            r8 as' as as as2~
+            as1 \breathe
+
+            r8 as as as as2~
+            as1 \breathe
+
+            r8 as as as as2~
+            as1 \breathe
+
+            r8 bes bes bes4. as4~
+            as4 as2.
+
+            r8 as2.. \fermata
+            
           }
         }
       }
@@ -458,8 +479,28 @@ global = {
           \bassVerseOne
           \repeat volta 2{\bassRef}
           \tripletFeel 8 \relative c{
-            ges8 ges ges ges~
-            ges2\fermata
+            ges8 ges ges ges~ges2~
+            ges1 \breathe
+
+            f8 f f f~f2~
+            f1 \breathe
+
+            ges8 ges ges ges~ges2~
+            ges1 \breathe
+
+            f8 f f f~f2~
+            f1 \breathe
+
+            bes8 bes bes bes~bes2~
+            bes1 \breathe
+
+            des8 des des des~des2~
+            des1 \breathe
+
+            bes8 bes bes bes~bes2 
+            as1 \breathe
+
+            des \fermata
           }
         }
       }
