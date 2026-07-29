@@ -28,7 +28,7 @@ sopranText = \lyricmode{
   %=====
   doh bah doh 
   no more, no more, no more, no more
-  oh bah lah bah doh bah doh bah doh doh bah doh bah doh bah doh bah doh
+  oh bah doh and don't you come back no more doh bah doh bah doh bah doh
 
   % Verse One
   %=====
@@ -41,7 +41,7 @@ sopranText = \lyricmode{
   %=====
   doh bah doh 
   no more, no more, no more, no more
-  oh bah lah bah doh bah doh bah doh doh bah doh bah doh bah doh bah doh
+  oh bah doh and don't you come back no more doh bah doh bah doh bah doh
   Jack
 }
 
@@ -277,8 +277,8 @@ sopranRef = {
     f2 r4 des4
     f f bes bes des des8 bes~bes des4.
     r8 a4 bes2 bes8
-    as f as f f4 f8 f8~
-    f4 es8 des es des4 f8
+    as f as(f) f4 f8 f8~
+    f4 es8 des es des4 es8
     f2 es2 \breathe
   }
 }
@@ -486,13 +486,13 @@ global = {
             r8 des, des des~des2~
             des1 \breathe
 
-            r8 as' as as as2~
+            r8 as' as as~as2~
             as1 \breathe
 
-            r8 as as as as2~
+            r8 as as as~as2~
             as1 \breathe
 
-            r8 as as as as2~
+            r8 as as as~as2~
             as1 \breathe
 
             r8 bes bes bes4. as4~
