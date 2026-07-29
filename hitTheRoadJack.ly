@@ -410,8 +410,29 @@ global = {
           \altVerseOne
           \repeat volta 2{{\altRef \tripletFeel 8 \relative c'{es8 des} }}
           \tripletFeel 8 \relative c' {
-            r4 as8 as~
-            as2\fermata
+            r4 as8 as~as2~
+            as1 \breathe
+
+            r4 des8 des~des2~
+            des1 \breathe
+
+            r4 as8 as~as2~
+            as1 \breathe
+
+            r4 c8 c~c2~
+            c1 \breathe
+
+            r4 des8 des~des2~
+            des1 \breathe
+
+            r4 c8 c~c2~
+            c1 \breathe
+
+            r4 des8 des~des2~
+            des2 c \breathe
+
+            r4 es2
+            des4 \fermata
           }
         }
       }
