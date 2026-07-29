@@ -213,7 +213,7 @@ altIntro ={
 
 tenorIntro = {
   \tripletFeel 8 \relative c{ 
-    r1 r f4 f es es | des8 es des4 f es8 r
+    r1 r f4 f es es | des8 es des4 f c8 r
     des4 des c c | des des es es |
     f4 f es es | des8 es des4 c c |
     des4 des c c | des des es es |
@@ -407,7 +407,8 @@ global = {
             r4. es8~es2~
             es1 \breathe
 
-            r4. ges4 f4. \fermata
+            r4. ges4 f8~
+            f4 \fermata
 
           }
         }
@@ -497,7 +498,8 @@ global = {
             r8 bes bes bes4. as4~
             as4 as2.
 
-            r8 as2.. \fermata
+            r8 as8~as2~
+            as4 \fermata
             
           }
         }
@@ -542,7 +544,7 @@ global = {
             bes8 bes bes bes~bes2 
             as1 \breathe
 
-            des \fermata
+            des2.~des4 \fermata
           }
         }
       }
