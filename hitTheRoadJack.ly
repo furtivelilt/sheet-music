@@ -385,7 +385,7 @@ global = {
           \sopranRef
           \sopranVerseOne
           \repeat volta 2{\sopranRef}
-          \relative c' {
+          \tripletFeel 8 \relative c' {
             r4. des8~
             des2\fermata
           }
@@ -408,10 +408,10 @@ global = {
           \altBridge
           \altRef
           \altVerseOne
-          \repeat volta 2{{\altRef \relative c'{es8 des} }}
-          \relative c' {
+          \repeat volta 2{{\altRef \tripletFeel 8 \relative c'{es8 des} }}
+          \tripletFeel 8 \relative c' {
             r4 as8 as~
-            as\fermata
+            as2\fermata
           }
         }
       }
@@ -432,8 +432,8 @@ global = {
           \tenorBridge
           \tenorRef
           \tenorVerseOne
-          \repeat volta 2{{\tenorRef \relative c'{as4 \breathe}}}
-          \relative c {
+          \repeat volta 2{{\tenorRef \tripletFeel 8 \relative c'{as4 \breathe}}}
+          \tripletFeel 8 \relative c {
             r8 es es es~
             es2\fermata
           }
@@ -457,7 +457,7 @@ global = {
           \bassRef
           \bassVerseOne
           \repeat volta 2{\bassRef}
-          \relative c{
+          \tripletFeel 8 \relative c{
             ges8 ges ges ges~
             ges2\fermata
           }
