@@ -386,8 +386,29 @@ global = {
           \sopranVerseOne
           \repeat volta 2{\sopranRef}
           \tripletFeel 8 \relative c' {
-            r4. des8~
-            des2\fermata
+            r4. des8~des2~
+            des1 \breathe
+
+            r4. f8~f2~
+            f1 \breathe
+
+            r4. es8~es2~
+            es1 \breathe
+
+            r4. es8~es2~
+            es1 \breathe
+
+            r4. f8~f2~
+            f1 \breathe
+
+            r4. es8~es2~
+            es1 \breathe
+
+            r4. es8~es2~
+            es1 \breathe
+
+            r4. ges4 f4. \fermata
+
           }
         }
       }
