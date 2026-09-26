@@ -16,7 +16,7 @@
 global = {
   \time 4/4
   \key bes \minor
-  \tempo swing 2 = 75
+  \tempo swing 2 = 72
 }
 
 soloText = \lyricmode{
@@ -66,7 +66,22 @@ sopranText = \lyricmode{
   doh bah doh 
   no more, no more, no more, no more
   oh bah doh and don't you come back no more doh bah doh bah doh bah doh
-  %{
+
+  % Verse Two
+  %=====
+  Ooh __
+  Oh __
+  Don't care if you do 'cause it's un- der- stood 
+  you ain't got no mon- ey you just ain't no good
+  Oh __
+  Ah __ Bah
+  
+  % Refrain
+  %=====
+  doh bah doh 
+  no more, no more, no more, no more
+  oh bah doh and don't you come back no more doh bah doh bah doh bah doh
+
   % Outro
   %=====
   Jack __
@@ -83,7 +98,6 @@ sopranText = \lyricmode{
   Doh
 
   Bah Bah __
-  %}
 }
 
 altText = \lyricmode{
@@ -123,7 +137,8 @@ altText = \lyricmode{
   Hit the road
   Hit the road
 
-  %== Refrain
+  % Refrain
+  %=====
   Hit the road Jack
   and don't you come back
   no __ more, no more, no more hit the road Jack and don't you come back no more
@@ -135,7 +150,20 @@ altText = \lyricmode{
   Hit the road Jack
   Hit the road
   Hit the road
-  %{
+  Don't care if you do 'cause it's un- der- stood 
+  you ain't got no mon- ey you just ain't no good
+  Hit the road
+  Hit the road Jack
+  Hit the road 
+  Hit the road
+  
+  % Refrain
+  %=====
+  Hit the road Jack
+  and don't you come back
+  no __ more, no more, no more hit the road Jack and don't you come back no more
+  doh doh bah doh bah doh 
+
   % Outro
   %=====
   road Jack __
@@ -152,7 +180,6 @@ altText = \lyricmode{
   Doh
 
   Dah Dah __
-  %}
 }
 
 tenorText = \lyricmode{
@@ -183,9 +210,9 @@ tenorText = \lyricmode{
   % Verse one
   %=====
   Old wo- man old wo- man, don't treat me so mean
-  Loh Loh Loh I 
+  loh loh loh I 
   Guess If __ you say so __
-  Loh and go
+  loh and go
 
   % Refrain
   %=====
@@ -199,9 +226,14 @@ tenorText = \lyricmode{
   % Verse Two
   %=====
   Now ba- by lis- ten ba- by don't you treat me this way
-  Loh Loh Loh
+  loh loh loh Bah
+  loh loh loh loh 
+  loh loh loh Loh
+  loh loh loh loh 
+  loh loh Loh
+  I Guess If __ you say so __
+  loh and go
 
-  %{
   % Refrain
   %=====
   loh bah doh
@@ -228,7 +260,7 @@ tenorText = \lyricmode{
   
   Doh
   Bah __
-  %}
+
 }
 
 bassText = \lyricmode{
@@ -273,7 +305,21 @@ bassText = \lyricmode{
   %=====
   doh doh doh doh doh doh doh
   'Cause I'll be back on my feet some day
-  %{
+  doh doh doh doh
+  doh doh doh doh
+  doh doh doh doh
+  doh doh doh doh
+  doh doh doh doh
+  doh doh doh I'll
+  Have to pack my things and go.
+
+  % Refrain
+  %=====
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh doh doh doh
+  doh doh doh doh doh what you say?
+
   % Outro
   %=====
   Hit the road Jack __
@@ -288,7 +334,7 @@ bassText = \lyricmode{
   Hit the road Jack
   Doh
   Bah __
-  %}
+
 }
 
 bassMain = {
@@ -485,7 +531,7 @@ sopranVerseTwo = {
 
   as bes f8 f f4
 
-  ges8 ges ges4 ges8 f~f4 \breathe
+  ges8 ges ges4 ges8(f)~f4 \breathe
 
   f1~f2. a4(bes1)~bes2 r4 f4
   }
@@ -556,7 +602,7 @@ bassVerseTwo = {
       \clef "treble"
       \new Voice = "Solo"{
         \tripletFeel 8 \relative c'' {
-          R1*100
+          R1*65
           r4 f8 es f4 f 
           f8 as bes f~f2
           
