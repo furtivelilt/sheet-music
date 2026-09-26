@@ -16,7 +16,7 @@
 global = {
   \time 4/4
   \key bes \minor
-  \tempo swing 2 = 70
+  \tempo swing 2 = 75
 }
 
 soloText = \lyricmode{
@@ -66,7 +66,7 @@ sopranText = \lyricmode{
   doh bah doh 
   no more, no more, no more, no more
   oh bah doh and don't you come back no more doh bah doh bah doh bah doh
-
+  %{
   % Outro
   %=====
   Jack __
@@ -83,6 +83,7 @@ sopranText = \lyricmode{
   Doh
 
   Bah Bah __
+  %}
 }
 
 altText = \lyricmode{
@@ -126,8 +127,15 @@ altText = \lyricmode{
   Hit the road Jack
   and don't you come back
   no __ more, no more, no more hit the road Jack and don't you come back no more
-  doh doh bah doh bah doh hit the
+  doh doh bah doh bah doh 
 
+  % Verse Two
+  %=====
+  Now hit the road 
+  Hit the road Jack
+  Hit the road
+  Hit the road
+  %{
   % Outro
   %=====
   road Jack __
@@ -144,7 +152,7 @@ altText = \lyricmode{
   Doh
 
   Dah Dah __
-
+  %}
 }
 
 tenorText = \lyricmode{
@@ -177,8 +185,23 @@ tenorText = \lyricmode{
   Old wo- man old wo- man, don't treat me so mean
   Loh Loh Loh I 
   Guess If __ you say so __
-  Loh ba go
+  Loh and go
 
+  % Refrain
+  %=====
+  loh bah doh
+  loh bah doh
+  loh bah doh bah
+  loh bah doh
+  loh bah doh
+  loh what you say?
+  
+  % Verse Two
+  %=====
+  Now ba- by lis- ten ba- by don't you treat me this way
+  Loh Loh Loh
+
+  %{
   % Refrain
   %=====
   loh bah doh
@@ -205,7 +228,7 @@ tenorText = \lyricmode{
   
   Doh
   Bah __
-
+  %}
 }
 
 bassText = \lyricmode{
@@ -236,7 +259,7 @@ bassText = \lyricmode{
   %=====
   doh doh doh doh doh doh doh you're the 
   mea- nest old wo- man that I've ev- er seen.
-  Doh doh doh doh doh doh doh I
+  Doh doh doh doh doh doh doh I'll
   Have to pack my things and go.
 
   % Refrain
@@ -246,6 +269,11 @@ bassText = \lyricmode{
   doh doh doh doh doh doh doh doh
   doh doh doh doh doh what you say?
 
+  % Verse Two
+  %=====
+  doh doh doh doh doh doh doh
+  'Cause I'll be back on my feet some day
+  %{
   % Outro
   %=====
   Hit the road Jack __
@@ -260,6 +288,7 @@ bassText = \lyricmode{
   Hit the road Jack
   Doh
   Bah __
+  %}
 }
 
 bassMain = {
@@ -449,6 +478,75 @@ bassVerseOne = {
   }
 }
 
+sopranVerseTwo = {
+  \tripletFeel 8 \relative c'{
+  f1~f2. a4(bes1)~bes2 r4 bes 
+  bes f8 f es4 es8 des es des8~des f8~f8 f f4
+
+  as bes f8 f f4
+
+  ges8 ges ges4 ges8 f~f4 \breathe
+
+  f1~f2. a4(bes1)~bes2 r4 f4
+  }
+}
+
+altVerseTwo = {
+  \tripletFeel 8 \relative c'{
+    des4
+    r4 es8 es es4 r 
+    es8 es es4 r bes 
+    
+    r4 es8 es es4 r 
+    es8 es es4 r g,
+
+    as as8 as bes4 ges8 ges
+    ges8 bes~bes as8~as8 bes bes4 
+    
+    f' es des8 bes bes4
+
+    des8 bes bes4 bes2 \breathe
+
+    r4 es8 es es4 r 
+    es8 es es4 r bes 
+    
+    r4 es8 es es4 r 
+    es8 es es4 r4 es8 des 
+    
+  }
+}
+
+tenorVerseTwo = {
+  \tripletFeel 8 \relative c{
+    bes'4
+    bes8 f f8 f es8 des es8 des
+    es8 des es4 f4 r
+
+    as2 f~
+    f es4 r8 bes
+
+    des4 des c c des des es es
+    f f es es des des c r8 bes
+
+    des4 es8(des) es4 des4 f(bes2) r4
+
+    as2.  es8 f~f1 \breathe
+  }
+}
+
+bassVerseTwo = {
+  \tripletFeel 8 \relative c{
+  bes4 bes as as ges ges f
+  r8 bes f'4 es des8 bes8 bes4 des4 bes8 bes~bes4 r4
+
+  bes4 bes as as ges ges f f
+  bes bes as as ges ges f f
+
+  bes4 bes as as ges ges f r8 es' 
+  f f es es des4 bes8 bes8~bes1 \breathe
+  }
+}
+
 \score {
   \transpose es es{
   \new ChoirStaff <<
@@ -458,7 +556,7 @@ bassVerseOne = {
       \clef "treble"
       \new Voice = "Solo"{
         \tripletFeel 8 \relative c'' {
-          R1*45
+          R1*100
           r4 f8 es f4 f 
           f8 as bes f~f2
           
@@ -501,6 +599,8 @@ bassVerseOne = {
           \sopranBridge
           \sopranRef
           \sopranVerseOne
+          \sopranRef
+          \sopranVerseTwo
           \repeat volta 2{\sopranRef}
           \tripletFeel 8 \relative c' {
             r4. ^\markup {\italic {schnipsen stopp!}} des8~des2~
@@ -547,6 +647,8 @@ bassVerseOne = {
           \altBridge
           \altRef
           \altVerseOne
+          \altRef
+          \altVerseTwo
           \repeat volta 2{{\altRef \tripletFeel 8 \relative c'{es8 des} }}
           \tripletFeel 8 \relative c' {
             r4 as8 as~as2~
@@ -593,6 +695,8 @@ bassVerseOne = {
           \tenorBridge
           \tenorRef
           \tenorVerseOne
+          \tenorRef
+          \tenorVerseTwo
           \repeat volta 2{{\tenorRef \tripletFeel 8 \relative c'{as4 \breathe}}}
           \tripletFeel 8 \relative c {
             r8 es es es~es2~
@@ -639,6 +743,8 @@ bassVerseOne = {
           \bassBridge
           \bassRef
           \bassVerseOne
+          \bassRef
+          \bassVerseTwo
           \repeat volta 2{\bassRef}
           \tripletFeel 8 \relative c{
             ges8 ges ges ges~ges2~
@@ -678,7 +784,7 @@ bassVerseOne = {
 }
   \layout {
     \context {
-      \Staff
+      \Staff 
       \RemoveEmptyStaves
       % Uncomment the next line if you want to hide empty staves even on the very first system:
       % \override VerticalAxisGroup.remove-first = ##t
