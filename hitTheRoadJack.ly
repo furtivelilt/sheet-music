@@ -621,11 +621,11 @@ bassVerseTwo = {
           r4 bes8 as bes4 bes
           bes8 as bes des~des2
 
-          r4 es8 des bes4 as
+          r4 <\tweak font-size -3 bes es>8 des bes4 as
           bes8 as bes des~des2 \breathe
 
-          as4 bes des es~
-          es1
+          as4 bes des <\tweak font-size -3 bes es>8~
+          <\tweak font-size -3 bes es>1
         }
       }
       \new Lyrics = "Solo" {
@@ -766,7 +766,7 @@ bassVerseTwo = {
             r8 bes bes bes4.(as4) 
             r4 as2. \breathe
 
-            r8 ges8~ges2.(
+            r8 ges8~ges2~ges8(as
             as1)
             
           }
@@ -814,8 +814,8 @@ bassVerseTwo = {
             bes8 bes bes bes~bes2 
             as1 \breathe
 
-            des1~
-            des
+            b1(
+            des)
           }
         }
       }
