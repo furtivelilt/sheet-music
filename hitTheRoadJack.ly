@@ -16,7 +16,7 @@
 global = {
   \time 4/4
   \key bes \minor
-  \tempo swing 2 = 100%72
+  \tempo swing 2 = 72
   \set Staff.midiInstrument = "voice oohs"
 }
 
