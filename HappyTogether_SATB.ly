@@ -16,7 +16,7 @@
 global = {
   \time 4/4
   \key fis \minor
-  \tempo swing 4 = 120
+  \tempo swing 4 = 123
   \partial 4
 }
 
@@ -55,50 +55,20 @@ sopranMusic = {
 
     % Chorus
     %=====
+    ais2~ais8 cis~cis4
+    b2~b8 gis8~gis4
+    ais4. ais8 ais b~b cis~
+    cis4. cis8 cis b~b4
+
+    ais2~ais8 cis~cis4
+    b2~b8 gis8~gis4
+    ais4. ais8 ais b~b cis~
+    cis4. cis8 cis b~b4
   }
 
 }
 
 altMusic = {
-  \tripletFeel 8 \relative c' {
-    % Intro
-    %=====
-    r4 
-
-    r cis e8 cis~cis4
-    r cis b8 cis~cis4
-    r cis b8 cis~cis4
-    r cis e8 cis~cis4
-
-    % Verse One
-    %=====
-    r cis e8 cis~cis4
-    r cis b8 cis~cis4
-    r cis b8 cis~cis4
-    r cis e8 cis~cis4
-
-    r cis e8 cis~cis4
-    r cis b8 cis~cis4
-    r cis cis8 cis~cis4
-    r cis cis8 dis~dis4
-
-    r cis e8 cis~cis4
-    r cis a'8 gis a4
-    r cis, b8 cis~cis4
-    r cis e8 cis~cis4
-
-    r cis e8 cis~cis4
-    r cis b8 cis~cis4
-    r cis cis8 cis~cis4
-    cis2. r4
-
-    % Chorus
-    %=====
-
-  }
-}
-
-tenorMusic = {
   \tripletFeel 8 \relative c {
     % Intro
     %=====
@@ -133,6 +103,65 @@ tenorMusic = {
 
     % Chorus
     %=====
+    fis' cis ais fis
+    e8 gis cis dis~
+    dis e dis4 
+    cis4. b8 cis dis~dis e16( fis
+    e2.) r4
+
+    fis cis ais fis
+    e8 gis cis dis~
+    dis e dis4 
+    cis4. b8 cis dis~dis e16( fis
+    e2.) r4
+  }
+}
+
+tenorMusic = {
+  \tripletFeel 8 \relative c {
+    % Intro
+    %=====
+    r4 
+
+    r cis e8 cis~cis4
+    r cis b8 cis~cis4
+    r cis b8 cis~cis4
+    r cis e8 cis~cis4
+
+    % Verse One
+    %=====
+    r cis e8 cis~cis4
+    r cis b8 cis~cis4
+    r cis b8 cis~cis4
+    r cis e8 cis~cis4
+
+    r cis e8 cis~cis4
+    r cis b8 cis~cis4
+    r cis cis8 cis~cis4
+    r cis cis8 dis~dis4
+
+    r cis e8 cis~cis4
+    r cis a'8 gis a4
+    r cis, b8 cis~cis4
+    r cis e8 cis~cis4
+
+    r cis e8 cis~cis4
+    r cis b8 cis~cis4
+    r cis cis8 cis~cis4
+    cis2. r4
+
+    % Chorus
+    %=====
+    fis1 \glissando
+    e \glissando
+    cis4. cis8 cis cis~cis e~
+    e1
+
+    fis1 \glissando
+    e \glissando
+    cis4. cis8 cis cis~cis e~
+    e1
+
   }
 }
 
@@ -151,22 +180,33 @@ bassMusic = {
     %=====
     fis fis fis fis
     fis fis fis fis
-    e' e e e 
+    e e e e 
     e e e e
     d d d d
     d d d d
     cis cis cis cis
     cis cis cis cis
 
-    fis, fis fis fis
     fis fis fis fis
-    e' e e e 
+    fis fis fis fis
+    e e e e 
     e e e e
     d d d d
     d d d d
     cis cis cis cis
     cis2. r4
    
+   % Chorus
+   %=====
+   fis4 fis fis fis
+   cis cis cis cis 
+   fis fis fis fis 
+   a, a a a
+
+   fis'4 fis fis fis
+   cis cis cis cis 
+   fis fis fis fis 
+   a, a a a
   }
 }
 
@@ -203,38 +243,6 @@ sopranText = \lyricmode{
 }
 
 altText = \lyricmode{
-  % Intro
-  %=====
-  doh bah dah
-  doh bah dah
-  doh bah dah
-  doh bah dah
-
-  % Verse One
-  %=====
-  doh bah dah
-  doh bah dah
-  doh bah dah
-  doh bah dah
-
-  doh bah dah
-  doh bah dah
-  doh bah dah
-  doh bah dah
-
-  doh bah dah
-  doh bah dah bah
-  doh bah dah
-  doh bah dah
-
-  doh bah dah
-  doh bah dah
-  doh bah dah
-  doh
-
-}
-
-tenorText = \lyricmode{
   % Intro
   %=====
   bah doom bah doh dah bah 
@@ -280,6 +288,37 @@ So happy together
 
 }
 
+tenorText = \lyricmode{
+  % Intro
+  %=====
+  doh bah dah
+  doh bah dah
+  doh bah dah
+  doh bah dah
+
+  % Verse One
+  %=====
+  doh bah dah
+  doh bah dah
+  doh bah dah
+  doh bah dah
+
+  doh bah dah
+  doh bah dah
+  doh bah dah
+  doh bah dah
+
+  doh bah dah
+  doh bah dah bah
+  doh bah dah
+  doh bah dah
+
+  doh bah dah
+  doh bah dah
+  doh bah dah
+  doh
+}
+
 bassText = \lyricmode{
   bah
   doh doh doh doh
@@ -308,7 +347,7 @@ bassText = \lyricmode{
 }
 
 \score {
-  \transpose c c{
+  \transpose c as{
   \new ChoirStaff <<
 
     \new Staff = "Sopran" <<
