@@ -106,14 +106,14 @@ altMusic = {
     fis' cis ais fis
     e8 gis cis dis~
     dis e dis4 
-    cis4. b8 cis dis~dis e16( fis
+    cis4. bes8 cis dis~dis e16( fis
     e2.) r4
 
     fis cis ais fis
     e8 gis cis dis~
     dis e dis4 
-    cis4. b8 cis dis~dis e16( fis
-    e2.) r4
+    cis4. bes8 cis dis~dis e16( fis
+    e1)
   }
 }
 
