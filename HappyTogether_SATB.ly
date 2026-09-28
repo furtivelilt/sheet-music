@@ -212,6 +212,28 @@ tenorMusic = {
     cis4. cis8 cis cis~cis e~
     e4 d2.
 
+    % Verse Two
+    %=====
+    cis2 b 
+    a2. r4
+    b2 a 
+    gis2. r4
+    a2 gis
+    fis2. r4 
+    r cis cis8 cis~cis4
+    cis2. r4
+
+    % Chorus
+    %=====
+    fis'1 \glissando
+    e \glissando
+    cis4. cis8 cis cis~cis e~
+    e1
+
+    fis1 \glissando
+    e \glissando
+    cis4. cis8 cis cis~cis e~
+    e4 d2.
   }
 }
 
