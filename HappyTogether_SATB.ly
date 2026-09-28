@@ -88,6 +88,18 @@ sopranMusic = {
     b2~b8 gis8~gis4
     ais4. ais8 ais b~b cis~
     cis4. cis8 cis b~b4
+
+    % Verse Three
+    %=====
+    r4 a gis8 fis~fis4
+    r fis cis'8 b cis4
+    r4 gis fis8 e~e4
+    r e fis8 gis~gis4
+
+    r fis a8 fis~fis4
+    r fis e8 fis~fis4
+    r f dis8 f~f4
+    f2. r4
   }
 
 }
@@ -164,6 +176,18 @@ altMusic = {
     dis e dis4 
     cis4. bes8 cis dis~dis e16( fis
     e1)
+
+    % Verse Three
+    %=====
+    a,8 gis a4 r8 gis fis gis
+    a4 r8 cis b a gis fis
+    gis fis gis4 r8 gis e fis
+    gis4. b8 a gis fis e 
+
+    fis e fis4~fis8 fis e f 
+    fis4 r8 fis fis gis~gis fis 
+    f4 cis'2.
+    gis2. r4
   }
 }
 
@@ -220,12 +244,12 @@ tenorMusic = {
     gis2. r4
     a2 gis
     fis2. r4 
-    r cis cis8 cis~cis4
+    r cis' cis8 cis~cis4
     cis2. r4
 
     % Chorus
     %=====
-    fis'1 \glissando
+    fis1 \glissando
     e \glissando
     cis4. cis8 cis cis~cis e~
     e1
@@ -234,6 +258,18 @@ tenorMusic = {
     e \glissando
     cis4. cis8 cis cis~cis e~
     e4 d2.
+
+    % Verse Three
+    %=====
+    cis8 b cis4 r8 b a b
+    cis4 r8 e d cis b a
+    b a b4 r8 a gis a 
+    b4. d8 cis b a gis
+    a gis a4~a8 a fis gis
+    a4 r8 a a b~b a
+    a4 gis2.
+    cis2. r4
+
   }
 }
 
@@ -302,6 +338,17 @@ bassMusic = {
    cis4 cis cis cis8 e
    fis4 fis fis fis4
    a,2 b
+
+   % Verse Three
+    %=====
+    fis'1
+    fis2. fis4
+    e1
+    e2. e4
+    d1
+    d2. d4
+    cis1
+    cis2. r4
   }
 }
 
