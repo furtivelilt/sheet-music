@@ -16,9 +16,9 @@
 global = {
   \time 4/4
   \key fis \minor
-  \tempo swing 4 = 150 %123
+  \tempo swing 4 = 123
   \partial 4
-  \set Staff.midiInstrument = #"violin"
+  \set Staff.midiInstrument = "voice oohs"
 }
 
 sopranMusic = {
@@ -477,7 +477,7 @@ bassText = \lyricmode{
 }
 
 \score {
-  \transpose c c'{%as{
+  \transpose c as{
   \new ChoirStaff <<
 
     \new Staff = "Sopran" <<
@@ -543,7 +543,6 @@ bassText = \lyricmode{
         }
       }
     
-    \new Staff = "Test" <<>>
     >>
   >>
   }
