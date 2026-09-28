@@ -178,24 +178,24 @@ bassMusic = {
      
     % Verse One
     %=====
-    fis fis fis fis
-    fis fis fis fis
-    e e e e 
-    e e e e
-    d d d d
-    d d d d
-    cis cis cis cis
-    cis cis cis cis
+    fis1
+    fis2. fis4
+    e1
+    e2. e4
+    d1
+    d2. d4
+    cis1
+    cis2. cis4
 
-    fis fis fis fis
-    fis fis fis fis
-    e e e e 
-    e e e e
-    d d d d
-    d d d d
-    cis cis cis cis
+    fis1
+    fis2. fis4
+    e1
+    e2. e4
+    d1
+    d2. d4
+    cis1
     cis2. r4
-   
+
    % Chorus
    %=====
    fis4 fis fis fis
@@ -203,10 +203,10 @@ bassMusic = {
    fis fis fis fis 
    a, a a a
 
-   fis'4 fis fis fis
-   cis cis cis cis 
-   fis fis fis fis 
-   a, a a a
+   fis'4 fis fis fis8 e
+   cis4 cis cis cis8 e
+   fis4 fis fis fis8 gis,
+   a4 a a a8 e'
   }
 }
 
@@ -263,28 +263,6 @@ altText = \lyricmode{
   So hap- py to- ge- ther
   
   doh
-%{
-If I should call you up, invest a dime
-And you say you belong to me, and ease my mind
-Imagine how the world could be, so very fine
-So happy together
-I can't see me lovin' nobody but you
-For all my life
-When you're with me, baby, the skies'll be blue
-For all my life
-Me and you, and you and me
-No matter how they toss the dice, it had to be
-The only one for me is you, and you for me
-So happy together
-I can't see me lovin' nobody but you
-For all my life
-When you're with me, baby, the skies'll be blue
-For all my life
-Me and you, and you and me
-No matter how they toss the dice, it had to be
-The only one for me is you, and you for me
-So happy together
-%}
 
 }
 
@@ -322,28 +300,37 @@ tenorText = \lyricmode{
 bassText = \lyricmode{
   bah
   doh doh doh doh
-
-  doh doh doh doh
-  doh doh doh bah
-  doh doh doh doh
-  doh doh doh bah
-
-  doh doh doh doh
-  doh doh doh bah
-  doh doh doh doh
-  doh doh doh bah
-
-  doh doh doh doh
-  doh doh doh bah
-  doh doh doh doh
-  doh doh doh bah
-
-  doh doh doh doh
-  doh doh doh bah
-  doh doh doh doh
   doh doh doh bah
 
   doh
+  doh bah
+  doh
+  doh bah
+
+  doh
+  doh bah
+  doh
+  doh bah
+
+  doh
+  doh bah
+  doh
+  doh bah
+
+  doh
+  doh bah
+  doh
+  doh 
+
+  doh doh doh doh 
+  doh doh doh bah
+  doh doh doh doh 
+  doh doh doh bah
+
+  doh doh doh doh bah
+  doh doh doh bah dah
+  doh doh doh doh bah
+  doh doh doh bah dah
 }
 
 \score {
