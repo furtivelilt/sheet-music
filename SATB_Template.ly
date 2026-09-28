@@ -66,7 +66,7 @@ bassText = \lyricmode{
       \clef "treble"
       \new Voice = "Sopran" {
         { 
-        \sopranMusic
+          \sopranMusic
         }
       }
       \new Lyrics = "Sopran" {
@@ -82,6 +82,7 @@ bassText = \lyricmode{
       \clef "treble"
       \new Voice = "Alt" {
         {
+          \altMusic
         }
       }
       \new Lyrics = "Alt" {
@@ -97,6 +98,7 @@ bassText = \lyricmode{
       \clef "bass"
       \new Voice = "Tenor" {
         {
+          \tenorMusic
         }
       }
       \new Lyrics = "Tenor" {
@@ -112,7 +114,7 @@ bassText = \lyricmode{
       \clef "bass"
       \new Voice = "bass" {
         {
-        
+          \bassMusic
         }
       }
       \new Lyrics = "bass" {
