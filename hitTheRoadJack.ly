@@ -1,6 +1,6 @@
 \version "2.26.0"
 \include "swing.ly"
-#(set-global-staff-size 18)
+#(set-global-staff-size 17)
 
 \paper {
   property-defaults.fonts.serif = "Courier"
