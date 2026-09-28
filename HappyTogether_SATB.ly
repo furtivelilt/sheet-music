@@ -477,7 +477,7 @@ bassText = \lyricmode{
 }
 
 \score {
-  \transpose c as{
+  \transpose c as{%c'{
   \new ChoirStaff <<
 
     \new Staff = "Sopran" <<
