@@ -90,7 +90,7 @@ altMusic = {
     r cis e8 cis~cis4
     r cis b8 cis~cis4
     r cis cis8 cis~cis4
-    gis2. r4
+    cis2. r4
 
     % Chorus
     %=====
@@ -104,9 +104,9 @@ tenorMusic = {
     %=====
     r8 cis8
 
-    e-. cis cis'2~cis8 cis,
+    e-. cis cis'2 cis8 cis,
     e-. cis~cis e-. a4 fis8 cis
-    e-. cis cis'2~cis8 cis,
+    e-. cis cis'2 cis8 cis,
     e-. cis~cis e-. r8 a8 fis gis
 
     % Verse One
@@ -121,15 +121,15 @@ tenorMusic = {
     f4 cis'2.~
     cis2 r8 a8 fis gis
 
-    a gis a4 r8 gis a4
-    r cis b8 a gis fis
+    a gis a4 r8 gis fis gis a4
+    r8 cis b8 a gis fis
     gis fis gis4 r8 gis e fis
     gis16( a gis8~gis8) b8 a gis fis e 
 
     fis e fis4~fis8 fis e f 
     fis4 r8 fis fis gis~gis fis 
-    f4 cis'2.~
-    cis2. r4
+    f4 cis'2.
+    gis2. r4
 
     % Chorus
     %=====
@@ -235,6 +235,48 @@ altText = \lyricmode{
 }
 
 tenorText = \lyricmode{
+  % Intro
+  %=====
+  bah doom bah doh dah bah 
+  doom bah doom dah bah dah
+  doom bah doh dah
+  bah doom doh doom
+
+  % Verse One
+  %=====
+  Im- a- gine me and you, I do
+  I think a- bout you day and night, it's on- ly right __
+  To think a- bout the girl you love and hold her tight
+  So hap- py to- ge- ther __
+
+  If I should call you up, in- vest a dime
+  And you say you be- long to me, and ease__ my mind
+  I- ma- gine- how the world could be, __ so ve- ry fine
+  So hap- py to- ge- ther
+  
+  doh
+%{
+If I should call you up, invest a dime
+And you say you belong to me, and ease my mind
+Imagine how the world could be, so very fine
+So happy together
+I can't see me lovin' nobody but you
+For all my life
+When you're with me, baby, the skies'll be blue
+For all my life
+Me and you, and you and me
+No matter how they toss the dice, it had to be
+The only one for me is you, and you for me
+So happy together
+I can't see me lovin' nobody but you
+For all my life
+When you're with me, baby, the skies'll be blue
+For all my life
+Me and you, and you and me
+No matter how they toss the dice, it had to be
+The only one for me is you, and you for me
+So happy together
+%}
 
 }
 
