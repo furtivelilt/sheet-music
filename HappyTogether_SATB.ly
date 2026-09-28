@@ -17,26 +17,35 @@ global = {
   \time 4/4
   \key es \minor
   \tempo swing 4 = 120
+  \partial 8
 }
 
 sopranMusic = {
-  \relative c' {
+  \tripletFeel 8 \relative c' {
+    r8 
+    r1 
   }
 }
 
 altMusic = {
-  \relative c' {
+  \tripletFeel 8 \relative c' {
+    r8 
   }
 }
 
 tenorMusic = {
-  \relative c' {
+  \tripletFeel 8 \relative c {
+    des8 
+    e des des'
+
   }
 }
 
 bassMusic = {
-  \relative c' {
-    ges4 ges ges ges
+  \tripletFeel 8 \relative c {
+    r8 
+
+    ges4 ges ges ges 
   }
 }
 
