@@ -25,7 +25,22 @@ sopranText = \lyricmode{
 
 sopranMusic = {
   \relative c' {
-    <c e g>1
+    <c e g>
+  }
+}
+
+altMusic = {
+  \relative c' {
+  }
+}
+
+tenorMusic = {
+  \relative c' {
+  }
+}
+
+bassMusic = {
+  \relative c' {
   }
 }
 
