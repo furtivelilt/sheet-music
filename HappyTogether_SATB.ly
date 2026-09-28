@@ -19,13 +19,29 @@ global = {
   \tempo swing 4 = 120
 }
 
-sopranText = \lyricmode{
-
-}
-
 sopranMusic = {
   \relative c' {
   }
+}
+
+altMusic = {
+  \relative c' {
+  }
+}
+
+tenorMusic = {
+  \relative c' {
+  }
+}
+
+bassMusic = {
+  \relative c' {
+    ges4 ges ges ges
+  }
+}
+
+sopranText = \lyricmode{
+
 }
 
 altText = \lyricmode{
@@ -50,7 +66,7 @@ bassText = \lyricmode{
       \clef "treble"
       \new Voice = "Sopran" {
         { 
-        \sopranMusic
+          \sopranMusic
         }
       }
       \new Lyrics = "Sopran" {
@@ -66,6 +82,7 @@ bassText = \lyricmode{
       \clef "treble"
       \new Voice = "Alt" {
         {
+          \altMusic
         }
       }
       \new Lyrics = "Alt" {
@@ -81,6 +98,7 @@ bassText = \lyricmode{
       \clef "bass"
       \new Voice = "Tenor" {
         {
+          \tenorMusic
         }
       }
       \new Lyrics = "Tenor" {
@@ -96,7 +114,7 @@ bassText = \lyricmode{
       \clef "bass"
       \new Voice = "bass" {
         {
-        
+          \bassMusic
         }
       }
       \new Lyrics = "bass" {
