@@ -16,8 +16,9 @@
 global = {
   \time 4/4
   \key fis \minor
-  \tempo swing 4 = 123
+  \tempo swing 4 = 150 %123
   \partial 4
+  \set Staff.midiInstrument = #"violin"
 }
 
 sopranMusic = {
@@ -541,16 +542,18 @@ bassText = \lyricmode{
           \bassText
         }
       }
-      
+    
+    \new Staff = "Test" <<>>
     >>
   >>
   }
   \layout {
     \context {
-      \Staff 
+      \Score 
+      \override LyricSpace.minimum-distance = #2
       \RemoveEmptyStaves
       % Uncomment the next line if you want to hide empty staves even on the very first system:
-      % \override VerticalAxisGroup.remove-first = ##t
+      %\override VerticalAxisGroup.remove-first = ##t
     }
   }
 
