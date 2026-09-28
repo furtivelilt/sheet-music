@@ -128,7 +128,7 @@ bassText = \lyricmode{
   }
   \layout {
     \context {
-      \Staff 
+      \Score 
       \RemoveEmptyStaves
       % Uncomment the next line if you want to hide empty staves even on the very first system:
       % \override VerticalAxisGroup.remove-first = ##t
