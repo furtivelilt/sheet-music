@@ -526,8 +526,8 @@ bassVerseOne = {
 
 sopranVerseTwo = {
   \tripletFeel 8 \relative c'{
-  f1~f2. a4(bes1)~bes2 r4 bes 
-  bes f8 f es4 es8 des es des8~des f8~f8 f f4
+  f1~f2. a4(bes1)~bes2 r8 bes4.
+  bes4 f8 f es4 es8 des es des8~des f8~f8 f f4
 
   as bes f8 f f4
 
@@ -544,9 +544,9 @@ altVerseTwo = {
     es8 es es4 r bes 
     
     r4 es8 es es4 r 
-    es8 es es4 r g,
+    es8 es es4 r8 g,4.
 
-    as as8 as bes4 ges8 ges
+    as4 as8 as bes4 ges8 ges
     ges8 bes~bes as8~as8 bes bes4 
     
     f' es des8 bes bes4
