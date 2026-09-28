@@ -171,10 +171,66 @@ bassMusic = {
 }
 
 sopranText = \lyricmode{
+  % Intro
+  %=====
+  doh bah dah
+  doh bah dah
+  doh bah dah
+  doh bah dah
+
+  % Verse One
+  %=====
+  doh bah dah
+  doh bah dah
+  doh bah dah
+  doh bah dah
+
+  doh bah dah
+  doh bah dah
+  doh bah dah
+  doh bah dah
+
+  doh bah dah
+  doh bah dah bah
+  doh bah dah
+  doh bah dah
+
+  doh bah dah
+  doh bah dah
+  doh bah dah
+  doh
 
 }
 
 altText = \lyricmode{
+  % Intro
+  %=====
+  doh bah dah
+  doh bah dah
+  doh bah dah
+  doh bah dah
+
+  % Verse One
+  %=====
+  doh bah dah
+  doh bah dah
+  doh bah dah
+  doh bah dah
+
+  doh bah dah
+  doh bah dah
+  doh bah dah
+  doh bah dah
+
+  doh bah dah
+  doh bah dah bah
+  doh bah dah
+  doh bah dah
+
+  doh bah dah
+  doh bah dah
+  doh bah dah
+  doh
 
 }
 
@@ -183,7 +239,30 @@ tenorText = \lyricmode{
 }
 
 bassText = \lyricmode{
+  bah
+  doh doh doh doh
 
+  doh doh doh doh
+  doh doh doh bah
+  doh doh doh doh
+  doh doh doh bah
+
+  doh doh doh doh
+  doh doh doh bah
+  doh doh doh doh
+  doh doh doh bah
+
+  doh doh doh doh
+  doh doh doh bah
+  doh doh doh doh
+  doh doh doh bah
+
+  doh doh doh doh
+  doh doh doh bah
+  doh doh doh doh
+  doh doh doh bah
+
+  doh
 }
 
 \score {
