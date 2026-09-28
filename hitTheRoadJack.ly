@@ -16,7 +16,8 @@
 global = {
   \time 4/4
   \key bes \minor
-  \tempo swing 2 = 72
+  \tempo swing 2 = 100%72
+  \set Staff.midiInstrument = "voice oohs"
 }
 
 soloText = \lyricmode{
@@ -351,7 +352,7 @@ sopranIntro = {
     f2 as bes f
     as1~as2.~as4 \breathe
     f2 as c2(as2)~
-    as2 bes4. bes8-.
+    as2 bes4. bes8
   }
 
 }
@@ -378,7 +379,7 @@ tenorIntro = {
     f4 f es es | des8 es des4 c c |
     des4 des c c | des des es es |
     f f es es | des es8 f8~f8 ges8 f4~
-    f2 f4. f8-.
+    f2 f4. f8
   }
 }
 
