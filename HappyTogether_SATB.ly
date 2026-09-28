@@ -7,16 +7,16 @@
 }
 
 \header {
-  title = "Title"
-  composer = "Composer"
+  title = "Happy Together"
+  composer = "The Turtles"
   arranger = "Arr. B. Lockmann"
-  subtitle= \markup {\italic "Subtitle"}
+  subtitle= \markup {\italic ""}
 }
 
 global = {
   \time 4/4
-  \key c \major
-  \tempo swing 2 = 72
+  \key es \minor
+  \tempo swing 4 = 120
 }
 
 sopranText = \lyricmode{
@@ -25,7 +25,6 @@ sopranText = \lyricmode{
 
 sopranMusic = {
   \relative c' {
-    <c e g>1
   }
 }
 
