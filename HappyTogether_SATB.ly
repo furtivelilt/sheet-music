@@ -68,14 +68,26 @@ sopranMusic = {
     % Verse Two
     %=====
     r4 a gis8 fis~fis4
-    r fis e8 cis~cis4
-    r4 gis' fis8 e~e4
+    r fis cis'8 b cis4
+    r4 gis fis8 e~e4
     r e fis8 gis~gis4
 
     r fis a8 fis~fis4
     r fis e8 fis~fis4
     r f dis8 f~f4
-    r f dis8 f~f4
+    f2. r4
+
+    % Chorus
+    %=====
+    ais2~ais8 cis~cis4
+    b2~b8 gis8~gis4
+    ais4. ais8 ais b~b cis~
+    cis4. cis8 cis b~b4
+
+    ais2~ais8 cis~cis4
+    b2~b8 gis8~gis4
+    ais4. ais8 ais b~b cis~
+    cis4. cis8 cis b~b4
   }
 
 }
@@ -134,6 +146,24 @@ altMusic = {
     gis fis gis4 r8 gis e fis
     gis4. b8 a gis fis e 
 
+    fis e fis4~fis8 fis e f 
+    fis4 r8 fis fis gis~gis fis 
+    f4 cis'2.
+    gis2. r4
+
+    % Chorus
+    %=====
+    fis' cis ais fis
+    e8 gis cis dis~
+    dis e dis4 
+    cis4. bes8 cis dis~dis e16( fis
+    e2.) r4
+
+    fis cis ais fis
+    e8 gis cis dis~
+    dis e dis4 
+    cis4. bes8 cis dis~dis e16( fis
+    e1)
   }
 }
 
@@ -192,8 +222,8 @@ bassMusic = {
     r4
 
     r1
-    r2. r8 cis
-    fis,4 fis fis fis
+    r2. r8 cis,
+    fis4 fis fis fis
     fis fis fis fis
      
     % Verse One
@@ -230,14 +260,26 @@ bassMusic = {
 
    % Verse Two
     %=====
-    fis1
+    fis'1
     fis2. fis4
     e1
     e2. e4
     d1
     d2. d4
     cis1
-    cis2. cis4
+    cis2. r4
+    
+    % Chorus
+   %=====
+   fis4 fis fis fis
+   cis cis cis cis 
+   fis fis fis fis 
+   a, a a a
+
+   fis'4 fis fis fis8 e
+   cis4 cis cis cis8 e
+   fis4 fis fis fis4
+   a,2 b
   }
 }
 
