@@ -10,7 +10,7 @@
   title = "Happy Together"
   composer = "The Turtles"
   arranger = "Arr. B. Lockmann"
-  subtitle= \markup {\italic ""}
+  subtitle= \markup {\italic "Täle Chor"}
 }
 
 global = {
