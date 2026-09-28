@@ -90,7 +90,7 @@ altMusic = {
     r cis e8 cis~cis4
     r cis b8 cis~cis4
     r cis cis8 cis~cis4
-    cis2. r4
+    gis2. r4
 
     % Chorus
     %=====
@@ -165,7 +165,7 @@ bassMusic = {
     d d d d
     d d d d
     cis cis cis cis
-    cis cis cis r
+    cis2. r4
    
   }
 }
