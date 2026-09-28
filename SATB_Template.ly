@@ -19,10 +19,6 @@ global = {
   \tempo swing 2 = 72
 }
 
-sopranText = \lyricmode{
-
-}
-
 sopranMusic = {
   \relative c' {
     <c e g>
@@ -42,6 +38,10 @@ tenorMusic = {
 bassMusic = {
   \relative c' {
   }
+}
+
+sopranText = \lyricmode{
+
 }
 
 altText = \lyricmode{
