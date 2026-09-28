@@ -205,8 +205,8 @@ bassMusic = {
 
    fis'4 fis fis fis8 e
    cis4 cis cis cis8 e
-   fis4 fis fis fis8 gis,
-   a4 a a a8 e'
+   fis4 fis fis fis4
+   a,1
   }
 }
 
@@ -322,15 +322,15 @@ bassText = \lyricmode{
   doh
   doh 
 
-  doh doh doh doh 
-  doh doh doh bah
-  doh doh doh doh 
-  doh doh doh bah
+  bah bah bah bah 
+  bah bah bah bah
+  bah bah bah bah 
+  bah bah bah bah
 
-  doh doh doh doh bah
-  doh doh doh bah dah
-  doh doh doh doh bah
-  doh doh doh bah dah
+  bah bah bah bah da
+  bah bah bah bah da
+  bah bah bah bah
+  bah
 }
 
 \score {
