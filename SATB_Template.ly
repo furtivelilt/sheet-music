@@ -7,18 +7,38 @@
 }
 
 \header {
-  title = "Hit the road jack"
-  composer = "Ray Charles"
+  title = "Title"
+  composer = "Composer"
   arranger = "Arr. B. Lockmann"
-  subtitle= \markup {\italic " \"Ich seh' schwarz, wie Ray Charles\" "}
+  subtitle= \markup {\italic "Subtitle"}
 }
-
-sopranText = lyricsmode
 
 global = {
   \time 4/4
-  \key bes \minor
+  \key c \major
   \tempo swing 2 = 72
+}
+
+sopranText = \lyricmode{
+
+}
+
+sopranMusic = {
+  \relative c' {
+    <c e g>1
+  }
+}
+
+altText = \lyricmode{
+
+}
+
+tenorText = \lyricmode{
+
+}
+
+bassText = \lyricmode{
+
 }
 
 \score {
@@ -31,6 +51,7 @@ global = {
       \clef "treble"
       \new Voice = "Sopran" {
         { 
+        \sopranMusic
         }
       }
       \new Lyrics = "Sopran" {
@@ -46,39 +67,6 @@ global = {
       \clef "treble"
       \new Voice = "Alt" {
         {
-          \altIntro
-          \altBridge
-          \altRef
-          \altVerseOne
-          \altRef
-          \altVerseTwo
-          \repeat volta 2{{\altRef \tripletFeel 8 \relative c'{es8 des} }}
-          \tripletFeel 8 \relative c' {
-            r4 as8 as~as2~
-            as1 \breathe
-
-            r4 des8 des~des2~
-            des1 \breathe
-
-            r4 bes8 bes~bes2~
-            bes1 \breathe
-
-            r4 c8 c~c2~
-            c1 \breathe
-
-            r4 des8 des~des2~
-            des1 \breathe
-
-            r4 c8 c~c2~
-            c1 \breathe
-
-            r4 des8 des~des2
-            r2 c \breathe
-
-            r4 es2
-            des4~
-            des1
-          }
         }
       }
       \new Lyrics = "Alt" {
@@ -94,39 +82,6 @@ global = {
       \clef "bass"
       \new Voice = "Tenor" {
         {
-          \tenorIntro
-          \tenorBridge
-          \tenorRef
-          \tenorVerseOne
-          \tenorRef
-          \tenorVerseTwo
-          \repeat volta 2{{\tenorRef \tripletFeel 8 \relative c'{as4 \breathe}}}
-          \tripletFeel 8 \relative c {
-            r8 es es es~es2~
-            es1 \breathe
-
-            r8 as as as~as2~
-            as1 \breathe
-
-            r8 des, des des~des2~
-            des1 \breathe
-
-            r8 as' as as~as2~
-            as1 \breathe
-
-            r8 as as as~as2~
-            as1 \breathe
-
-            r8 as as as~as2~
-            as1 \breathe
-
-            r8 bes bes bes4.(as4) 
-            r4 as2. \breathe
-
-            r8 ges8~ges2~ges8(as
-            as1)
-            
-          }
         }
       }
       \new Lyrics = "Tenor" {
@@ -153,7 +108,7 @@ global = {
       
     >>
   >>
-}
+  }
   \layout {
     \context {
       \Staff 
