@@ -1,13 +1,13 @@
 \version "2.26.0"
 \include "swing.ly"
-#(set-global-staff-size 18)
+#(set-global-staff-size 17)
 
 \paper {
   property-defaults.fonts.serif = "Courier"
 }
 
 \header {
-  title = "Eichholzer Täle"
+  title = "Titel"
   composer = "Composer"
   arranger = "Arr. B. Lockmann"
   subtitle= \markup {\italic "Täle Chor"}
@@ -22,33 +22,21 @@ global = {
 
 sopranMusic = {
   \relative c' {
-    d4.~
-    d4.~d
-    e
   }
 }
 
 altMusic = {
   \relative c' {
-    r8 a4~
-    a4.~a
-    cis
   }
 }
 
 tenorMusic = {
   \relative c {
-    r4 e8~
-    e4. fis
-    a
   }
 }
 
 bassMusic = {
   \relative c {
-    r4. 
-    d~d
-    d
   }
 }
 
