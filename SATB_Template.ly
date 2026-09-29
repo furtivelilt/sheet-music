@@ -7,36 +7,48 @@
 }
 
 \header {
-  title = "Title"
+  title = "Eichholzer Täle"
   composer = "Composer"
   arranger = "Arr. B. Lockmann"
-  subtitle= \markup {\italic "Subtitle"}
+  subtitle= \markup {\italic "Täle Chor"}
 }
 
 global = {
-  \time 4/4
+  \time 6/8
   \key c \major
-  \tempo swing 2 = 72
+  \tempo 8 = 200
+  \partial 8*3
 }
 
 sopranMusic = {
   \relative c' {
-    <c e g>
+    d4.~
+    d4.~d
+    e
   }
 }
 
 altMusic = {
   \relative c' {
+    r8 a4~
+    a4.~a
+    cis
   }
 }
 
 tenorMusic = {
-  \relative c' {
+  \relative c {
+    r4 e8~
+    e4. fis
+    a
   }
 }
 
 bassMusic = {
-  \relative c' {
+  \relative c {
+    r4. 
+    d~d
+    d
   }
 }
 
