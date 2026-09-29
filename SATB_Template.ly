@@ -14,10 +14,10 @@
 }
 
 global = {
-  \time 6/8
+  \time 4/4
   \key c \major
-  \tempo 8 = 200
-  \partial 8*3
+  \tempo swing 2 = 100
+  %\partial 8*3
 }
 
 sopranMusic = {
