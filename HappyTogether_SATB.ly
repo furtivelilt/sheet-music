@@ -16,9 +16,9 @@
 global = {
   \time 4/4
   \key fis \minor
-  \tempo swing 4 = 123
+  \tempo swing 4 = 200%123
   \partial 4
-  \set Staff.midiInstrument = "voice oohs"
+  \set Staff.midiInstrument = "tenor sax" %"blown bottle" %"voice oohs"
 }
 
 sopranMusic = {
