@@ -17,7 +17,7 @@ global = {
   \time 4/4
   \key bes \minor
   \tempo swing 2 = 72
-  \set Staff.midiInstrument = "tenor sax" %"voice oohs"
+  \set Staff.midiInstrument = "voice oohs"
 }
 
 soloText = \lyricmode{
