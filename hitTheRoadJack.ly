@@ -17,7 +17,7 @@ global = {
   \time 4/4
   \key bes \minor
   \tempo swing 2 = 72
-  \set Staff.midiInstrument = "voice oohs"
+  \set Staff.midiInstrument = "tenor sax" %"voice oohs"
 }
 
 soloText = \lyricmode{
@@ -552,7 +552,7 @@ altVerseTwo = {
     
     f' es des8 bes bes4
 
-    des8 bes bes4 bes2 \breathe
+    des8 bes bes4 a8(bes8)~bes4 \breathe
 
     r4 es8 es es4 r 
     es8 es es4 r bes 
