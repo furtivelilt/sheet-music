@@ -7,7 +7,7 @@
 }
 
 \header {
-  title = "Eichholzer Täle"
+  title = "Eichholzer Täle Hymne"
   composer = "Composer"
   arranger = "Arr. B. Lockmann"
   subtitle= \markup {\italic "Täle Chor"}
@@ -18,7 +18,7 @@ global = {
   \key bes \major
   \tempo 4 = 90
   \partial 8*3
-  \set Staff.midiInstrument = "voice oohs"
+  \set Staff.midiInstrument = "concertina"
 }
 
 sopranMusic = {
