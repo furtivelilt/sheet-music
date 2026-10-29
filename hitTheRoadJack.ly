@@ -17,7 +17,7 @@ global = {
   \time 4/4
   \key bes \minor
   \tempo swing 2 = 72
-  \set Staff.midiInstrument = "voice oohs"
+  \set Staff.midiInstrument = "alto sax" %"voice oohs"
 }
 
 soloText = \lyricmode{
@@ -625,7 +625,7 @@ bassVerseTwo = {
           r4 <\tweak font-size -3 bes es>8 des bes4 as
           bes8 as bes des~des2 \breathe
 
-          as4 bes des <\tweak font-size -3 bes es>8~
+          as4 bes des <\tweak font-size -3 bes es>4~
           <\tweak font-size -3 bes es>1
         }
       }
@@ -721,7 +721,7 @@ bassVerseTwo = {
 
             r4 es2
             des4~
-            des1
+            des2 (c2)
           }
         }
       }
