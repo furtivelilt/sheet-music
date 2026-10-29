@@ -18,6 +18,7 @@ global = {
   \key c \major
   \tempo swing 2 = 100
   %\partial 8*3
+  \set Staff.midiInstrument = "voice oohs" %"alto sax" %"blown bottle" %"voice oohs"
 }
 
 sopranMusic = {
