@@ -79,7 +79,7 @@ bassMusic = {
     d es d c
     bes f fis f
     bes4. bes8 bes2~
-    bes
+    bes1
   }
 }
 
