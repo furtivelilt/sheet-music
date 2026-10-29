@@ -18,13 +18,16 @@ global = {
   \key bes \major
   \tempo 8 = 200
   \partial 8*3
+  \set Staff.midiInstrument = "voice oohs"
 }
 
 sopranMusic = {
   \relative c' {
     d4.~
     d1
-    e2
+    e2 e8 e e e
+    d2 d
+    d4 c d2
   }
 }
 
@@ -32,7 +35,9 @@ altMusic = {
   \relative c' {
     r8 a4~
     a1
-    cis2
+    cis2 cis8 cis cis cis
+    b2 b 
+    a bes
   }
 }
 
@@ -40,7 +45,10 @@ tenorMusic = {
   \relative c {
     r4 e8~
     e2 fis
-    a2
+    a2 a8 a a a
+    g2 f 
+    f f
+
   }
 }
 
