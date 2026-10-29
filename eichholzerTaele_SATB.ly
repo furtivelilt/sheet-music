@@ -14,8 +14,8 @@
 }
 
 global = {
-  \time 6/8
-  \key c \major
+  \time 4/4
+  \key bes \major
   \tempo 8 = 200
   \partial 8*3
 }
@@ -23,32 +23,34 @@ global = {
 sopranMusic = {
   \relative c' {
     d4.~
-    d4.~d
-    e
+    d1
+    e2
   }
 }
 
 altMusic = {
   \relative c' {
     r8 a4~
-    a4.~a
-    cis
+    a1
+    cis2
   }
 }
 
 tenorMusic = {
   \relative c {
     r4 e8~
-    e4. fis
-    a
+    e2 fis
+    a2
   }
 }
 
 bassMusic = {
   \relative c {
     r4. 
-    d~d
-    d
+    d1
+    d2 d8 d d des
+    c2 b
+    bes
   }
 }
 
