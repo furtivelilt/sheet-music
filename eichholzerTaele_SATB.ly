@@ -16,37 +16,37 @@
 global = {
   \time 4/4
   \key bes \major
-  \tempo 4 = 110
+  \tempo 4 = 90
   \partial 8*3
-  \set Staff.midiInstrument = "voice aahs"
+  \set Staff.midiInstrument = "voice oohs"
 }
 
 sopranMusic = {
   \relative c' {
-    d4.~
-    d1
+    d8 d d
+    d2 d
     e2 e8 fis e cis
     d2 d
-    d4 c d8 es g f
+    d4( c) d8 es g f
     bes1
     bes
     c4 a es' c 
-    es4. f16 c16 d2~
+    es4. f16( c16) d2~
     d1
   }
 }
 
 altMusic = {
   \relative c' {
-    r8 a4~
-    a1
+    r8 a a
+    a2 a2
     cis2 cis8 d a bes
     b2 b 
     a bes8 c es d
     es1
     f
     d4 f c f
-    a4 bes2.~
+    a4( bes8) bes8 bes2~
     bes1
 
   }
@@ -54,7 +54,7 @@ altMusic = {
 
 tenorMusic = {
   \relative c {
-    r4 e8~
+    r4 e8
     e2 fis
     a1
     g2 f 
@@ -62,7 +62,7 @@ tenorMusic = {
     g1
     g
     g4 a a a
-    g8 f~f4~f2~
+    g8 (f4) f8 f2~
     f1
   }
 }
@@ -70,33 +70,47 @@ tenorMusic = {
 bassMusic = {
   \relative c {
     r4. 
-    d1
-    d2~d4.des8
-    c2 b4 a
+    d2 d
+    d2~d4. des8 
+    c2 b4( a)
     bes1
 
     bes4 es f es
     d es d c
     bes f fis f
-    bes1~
+    bes4. bes8 bes2~
     bes
   }
 }
 
 sopranText = \lyricmode{
-
+  Im Eich- holz- er Tä- le
+  Sing- en dass es schallt hier im 
+  gro- ßen grü- nen Wald
+  Wir
+  sind im Eich- hol- zer Tä- le
 }
 
 altText = \lyricmode{
-
+  Eich- holz- er Tä- le
+  Sing- en dass es schallt hier im 
+  gro- ßen grü- nen Wald
+  Wir
+  sind im Eich- hol- zer Tä- le
 }
 
 tenorText = \lyricmode{
-
+  holz- er Tä- le
+  schallt hier im 
+  Wald Wir 
+  sind im Eich- hol- zer Tä- le
 }
 
 bassText = \lyricmode{
-
+  er Tä- le
+  es schallt hier im 
+  Wald der grü- ne Wir wir al- le
+  sind im Eich- hol- zer Tä- le
 }
 
 \score {
